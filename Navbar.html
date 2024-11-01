@@ -1,0 +1,139 @@
+<link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  .nav-bar {
+    display: flex;
+    overflow: hidden;
+    color: #000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 230px;
+    font: 400 77px Outfit; /* Navbar font size */
+  }
+
+  
+  @media (width>= 1800px) {
+    .nav-bar {
+      padding: 10px 400px;
+      font: 500 77px Outfit;  /* Adjust navbar font size for smaller screens */
+    }
+  }
+
+  @media (min-width: 991px) and (max-width: 1200px) {
+    .nav-bar {
+      padding: 10px 150px;
+      font: 400 77px Outfit;  /* Adjust navbar font size for smaller screens */
+    }
+  }
+  @media (min-width: 991px) and (max-width: 1200px) {
+    .nav-bar {
+      padding: 10px 150px;
+      font: 400 77px Outfit;  /* Adjust navbar font size for smaller screens */
+    }
+  }
+  
+  .nav-content {
+    display: flex;
+    align-items: center;
+    gap: 7vw;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    aspect-ratio: 1.79;
+    object-fit: contain;
+    object-position: center;
+    width: 7.5vw;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.2vw;
+   
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .nav-item {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: 23px; /* Set font size for nav items to vw */
+  }
+
+
+  @media (width>= 1800px) {
+    .nav-item {
+      font-size: 40px; /* Adjust navbar font size for smaller screens */
+    }
+  }
+  
+  .nav-item-home {
+    width: 6vw;
+  }
+  .drawer{
+    width: 50px;
+    display: none;
+  }
+  
+  .nav-item-about {
+    width: 7vw;
+  }
+  
+  .nav-item-products {
+    width: 15.5vw;
+  }
+  
+  .nav-end {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+  }
+  
+  .nav-item-news {
+    width: 10.5vw;
+  }
+  
+  .nav-item-contact {
+    width: 9vw;
+  }
+
+  .nav-item-idl {
+    width: 3.5vw;
+  }
+  
+  .user-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 2.5vw;
+  }
+
+ 
+
+
+
+
+</style>
+
+<nav class="nav-bar" aria-label="Main navigation">
+  <div class="nav-content">
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/13147525caf671a1280c0fcf2a092cfb029f6b108668e7bd9621bcbd26068251?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="logo" alt="Company logo" />
+  </div>
+  <div class="nav-links">
+    <a href="javascript:void(0);" class="nav-item drawer" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#" class="nav-item nav-item-home">Home</a>
+    <a href="#" class="nav-item nav-item-about">About Us</a>
+    <a href="#" class="nav-item nav-item-products">Products & Solutions</a>
+   
+      <a href="#" class="nav-item nav-item-news">News & Events</a>
+      <a href="#" class="nav-item nav-item-contact">Contact Us</a>
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/9abbd582b28d9386334ff61028001786637f4ca51c30ea602c4b35665847405e?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="user-icon" alt="User account icon" />
+   
+  </div>
+ 
+</nav>

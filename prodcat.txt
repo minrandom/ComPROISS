@@ -1,0 +1,81 @@
+<style>
+.critical-care-section { display: flex; flex-direction: column; }
+.content-wrapper { background-color: #fff; display: flex; width: 100%; flex-direction: column; align-items: center; padding: 58px 80px 95px; }
+.inner-content { display: flex; width: 100%; max-width: 1065px; flex-direction: column; }
+.breadcrumb { display: flex; align-items: center; gap: 2px; font-size: 20px; font-family: Outfit, sans-serif; font-weight: 400; }
+.breadcrumb-item { color: #d6d4d4; }
+.breadcrumb-active { color: #989da2; }
+.category-list { display: flex; margin-top: 25px; width: 100%; align-items: center; gap: 15px; font-size: 18px; color: #000; text-align: center; line-height: 2; flex-wrap: wrap; }
+.category-item { border-radius: 40px; display: flex; flex-direction: column; flex-grow: 1; width: 132px; margin: auto 0; }
+.category-button { border-radius: 40px; padding: 8px 13px; }
+.category-active { background-color: #3e8cd6; color: #fff; }
+.category-inactive { background-color: #d6d4d4; }
+.product-section { display: flex; margin-top: 56px; width: 100%; flex-direction: column; }
+.product-title { color: #000; font: 600 30px/1 Outfit, sans-serif; }
+.product-grid { display: flex; margin-top: 26px; width: 100%; align-items: center; gap: 40px 42px; flex-wrap: wrap; }
+.product-card { align-self: stretch; display: flex; min-width: 240px; flex-direction: column; flex-grow: 1; width: 262px; margin: auto 0; }
+.product-image-wrapper { display: flex; width: 100%; flex-direction: column; }
+.product-image { aspect-ratio: 1; object-fit: contain; object-position: center; width: 100%; z-index: 10; }
+.product-name { color: #000; margin-top: 18px; font: 400 25px/1.2 Outfit, sans-serif; }
+
+@media (max-width: 991px) {
+    .content-wrapper { max-width: 100%; padding: 0 20px; }
+    .inner-content, .category-list, .product-section, .product-title, .product-grid { max-width: 100%; }
+    .product-section { margin-top: 40px; }
+    .category-button { padding: 0 20px; }
+}
+</style>
+
+<section class="critical-care-section">
+    <div class="content-wrapper">
+        <div class="inner-content">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <span class="breadcrumb-item">Products & Solutions /</span>
+                <span class="breadcrumb-active">Critical Care</span>
+            </nav>
+            <div class="category-list" role="tablist">
+                <div class="category-item">
+                    <button class="category-button category-active" role="tab" aria-selected="true">ICU Ventilators</button>
+                </div>
+                <div class="category-item">
+                    <button class="category-button category-inactive" role="tab" aria-selected="false">NICU Ventilators</button>
+                </div>
+                <div class="category-item">
+                    <button class="category-button category-inactive" role="tab" aria-selected="false">Syringe Pumps</button>
+                </div>
+                <div class="category-item">
+                    <button class="category-button category-inactive" role="tab" aria-selected="false">ICU Pendants</button>
+                </div>
+                <div class="category-item">
+                    <button class="category-button category-inactive" role="tab" aria-selected="false">NICU Pendants</button>
+                </div>
+                <div class="category-item">
+                    <button class="category-button category-inactive" role="tab" aria-selected="false">Suctions</button>
+                </div>
+            </div>
+            <section class="product-section">
+                <h2 class="product-title">ICU Ventilators</h2>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="product-image-wrapper">
+                            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/2eba427e6eb3f2b52331a47b53aa733c65739c9ed000a1e59772e66c0e4fed44?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="product-image" alt="Servo Air ICU Ventilator" />
+                        </div>
+                        <h3 class="product-name">Servo Air</h3>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image-wrapper">
+                            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/db211dbf50c62f0b6c99f11653b8d2b3cf7d1817071c07461411639430104ebb?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="product-image" alt="Servo C ICU Ventilator" />
+                        </div>
+                        <h3 class="product-name">Servo C</h3>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image-wrapper">
+                            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/7f6fa18352cf7562d59d4696af737ff6e6f5eb04aa3cf7d99e74a088cbe2b072?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="product-image" alt="Servo U ICU Ventilator" />
+                        </div>
+                        <h3 class="product-name">Servo U</h3>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .hero-section {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding: 350px 120px 100px; /* Original padding */
+      overflow: hidden; /* Prevent overflow */
+    }
+
+    @media (width >= 2000px) {
+        .hero-section {
+        padding: 700px 250px 200px /* Adjust padding for medium screens */
+      }
+    }
+    
+
+    @media (min-width: 991px) and (max-width: 1200px) {
+    .hero-section {
+        padding: 200px 100px 60px; /* Adjust padding for medium screens */
+    }
+    }
+
+    @media (min-width: 750px) and (max-width: 990px) {
+      .hero-section {
+        padding: 150px 50px 50px; /* Adjust padding for small screens */
+        width: 100%; /* Ensure full width */
+        box-sizing: border-box; /* Include padding in total width */
+      }
+    }
+
+    @media (min-width: 400px) and (max-width: 749px) {
+      .hero-section {
+        padding: 100px 30px 30px; /* Adjust padding for small screens */
+        width: 100%; /* Ensure full width */
+        box-sizing: border-box; /* Include padding in total width */
+      }
+    }
+    @media (max-width: 399px) {
+      .hero-section {
+        padding: 40px 20px 20px; /* Adjust padding for small screens */
+        width: 100%; /* Ensure full width */
+        box-sizing: border-box; /* Include padding in total width */
+      }
+    }
+    
+    .hero-image-wrapper {
+      position: absolute;
+      z-index: 0;
+      width: 100vw; /* Full viewport width */
+      height: 42vw; /* Height as a function of width */
+      overflow: hidden;
+      right: 0;
+      bottom: 0;
+    }
+    
+    .hero-image {
+      aspect-ratio: 2.39; /* Maintain aspect ratio */
+      object-fit: cover; /* Fill the area while maintaining aspect ratio */
+      object-position: center; /* Center the image */
+      width: 100%; /* Full width */
+    }
+    
+    .hero-content {
+      z-index: 1;
+      display: flex;
+      width: 856px; /* Fixed width for larger screens */
+      max-width: 100%; /* Allow maximum responsiveness */
+      flex-direction: column;
+      font-family: Outfit, sans-serif;
+      color: #fff;
+      justify-content: center;
+    }
+    
+    .hero-title {
+      font-size: 45px; /* Title font size */
+      font-weight: 600;
+    
+    }
+
+    @media (width >= 2000px) {
+      .hero-title {
+        max-width: 100%; /* Full width */
+        white-space: nowrap; /* Prevent word wrapping */
+        font-size: 70px; /* Adjust font size */
+        font-weight: 700;
+      }
+    }
+
+    @media (min-width: 991px) and (max-width: 1200px) {
+    .hero-title {
+        max-width: 100%; /* Full width */
+        font-size: 40px; /* Adjust font size */
+        
+      }
+    }
+
+    @media (min-width: 720px) and (max-width: 990px) {
+        .hero-title {
+        max-width: 100%; /* Full width */
+        font-size: 30px; /* Adjust font size */
+        
+      }
+    }
+
+    @media (max-width: 719px) {
+        .hero-title {
+        max-width: 100%; /* Full width */
+        font-size: 20px; /* Adjust font size */
+        
+      }
+    }
+
+    .hero-description {
+      font-size: 22px; /* Description font size */
+      font-weight: 400;
+  
+  
+    }
+
+    @media (width >= 2000px) {
+      .hero-description {
+        max-width: 100%; /* Full width */
+        white-space: nowrap; /* Prevent word wrapping */
+   
+        font-size: 25px; /* Adjust font size */
+        font-weight: 600;
+      }
+    }
+    
+    @media (min-width: 991px) and (max-width: 1200px) {
+      .hero-description {
+        font-size: 18px; /* Adjust font size */
+        max-width: 100%; /* Full width */
+      }
+    }
+
+    @media (min-width: 720px) and (max-width: 990px) {
+        .hero-description {
+        font-size: 16px; /* Adjust font size */
+        max-width: 100%; /* Full width */
+      }
+    }
+
+    @media (max-width: 719px) {
+        .hero-description{
+        max-width: 100%; /* Full width */
+        font-size: 13px; /* Adjust font size */
+        
+      }
+    }
+
+    @media (max-width: 680px) {
+      .hero-description {
+        display: none; /* Hide description on screens <= 680px */
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero-section">
+    <div class="hero-image-wrapper">
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/ad890c89d8ab36e3cab7103402ac5f492efd29575ca59b59eff9feb20383f444?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="" class="hero-image" />
+    </div>
+    <div class="hero-content">
+      <div class="hero-title">Delivering Excellence in Healthcare Solutions Across Indonesia</div>
+      <div class="hero-description">Indosopha is a leading medical equipment distributor in Indonesia, providing hospitals with advanced, reliable medical solutions to enhance patient care nationwide.</div>
+    </div>
+  </section>
+</body>
+</html>

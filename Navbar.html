@@ -7,133 +7,168 @@
     color: #000;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 230px;
+    padding: 10px 157px;
     font: 400 77px Outfit; /* Navbar font size */
   }
 
-  
-  @media (width>= 1800px) {
+  @media (min-width: 2400px) {
     .nav-bar {
-      padding: 10px 400px;
-      font: 500 77px Outfit;  /* Adjust navbar font size for smaller screens */
+      padding: 10px 350px;
+      font: 550 77px Outfit; /* Adjust navbar font size for larger screens */
+    }
+  }
+
+  @media (min-width: 1900px) and (max-width: 2400px) {
+    .nav-bar {
+      padding: 10px 250px;
+      font: 500 77px Outfit; /* Adjust navbar font size for medium screens */
+    }
+  }
+
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    .nav-bar {
+      padding: 10px 120px;
     }
   }
 
   @media (min-width: 991px) and (max-width: 1200px) {
     .nav-bar {
-      padding: 10px 150px;
-      font: 400 77px Outfit;  /* Adjust navbar font size for smaller screens */
+      padding: 10px 120px;
     }
   }
-  @media (min-width: 991px) and (max-width: 1200px) {
+
+  @media (min-width: 750px) and (max-width: 990px) {
     .nav-bar {
-      padding: 10px 150px;
-      font: 400 77px Outfit;  /* Adjust navbar font size for smaller screens */
+      padding: 10px 100px;
     }
   }
-  
+
+  @media (max-width: 749px) {
+    .nav-bar {
+      padding: 10px 80px;
+    }
+  }
+
   .nav-content {
     display: flex;
     align-items: center;
-    gap: 7vw;
+    gap: 50px;
     justify-content: flex-start;
     flex-wrap: wrap;
   }
-  
+
   .logo {
-    aspect-ratio: 1.79;
+    aspect-ratio: 1.8;
     object-fit: contain;
     object-position: center;
-    width: 7.5vw;
+    width: 150px;
   }
-  
+
+  @media (min-width: 750px) and (max-width: 1024px) {
+    .logo {
+      object-fit: contain;
+      object-position: center;
+      width: 120px;
+    }
+  }
+
   .nav-links {
     display: flex;
     align-items: center;
-    gap: 1.2vw;
-   
+    gap: 1.5vw;
     justify-content: flex-start;
     flex-wrap: wrap;
   }
-  
+
   .nav-item {
     text-align: center;
     text-decoration: none;
     color: inherit;
-    font-size: 23px; /* Set font size for nav items to vw */
+    font-size: 30px; /* Set font size for nav items */
   }
 
-
-  @media (width>= 1800px) {
+  @media (min-width: 2200px) {
     .nav-item {
-      font-size: 40px; /* Adjust navbar font size for smaller screens */
+      font-size: 38px; /* Adjust navbar font size for larger screens */
     }
   }
-  
+
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    .nav-item {
+      font-size: 22px; /* Adjust navbar font size for medium screens */
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .nav-item {
+      font-size: 20px; /* Adjust navbar font size for smaller screens */
+    }
+  }
+
+  @media (max-width: 680px) {
+    .nav-item {
+      display: none; /* Hide all nav items */
+    }
+    
+    .nav-links{
+      display: none;
+    }
+    .drawer {
+      width: 50px;
+      display: block; /* Show the drawer icon */
+    }
+  }
+
   .nav-item-home {
     width: 6vw;
   }
-  .drawer{
+
+  .drawer {
     width: 50px;
-    display: none;
+    display: none; /* Initially hidden */
   }
-  
+
   .nav-item-about {
     width: 7vw;
   }
-  
+
   .nav-item-products {
-    width: 15.5vw;
+    width: 15.625vw;
   }
-  
-  .nav-end {
-    display: flex;
-    align-items: center;
-    gap: 2vw;
-  }
-  
+
   .nav-item-news {
-    width: 10.5vw;
+    width: 10.547vw;
   }
-  
+
   .nav-item-contact {
-    width: 9vw;
+    width: 10.547vw;
   }
 
   .nav-item-idl {
     width: 3.5vw;
   }
-  
+
   .user-icon {
-    aspect-ratio: 1;
     object-fit: contain;
     object-position: center;
     width: 2.5vw;
   }
-
- 
-
-
-
-
 </style>
 
 <nav class="nav-bar" aria-label="Main navigation">
   <div class="nav-content">
     <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/13147525caf671a1280c0fcf2a092cfb029f6b108668e7bd9621bcbd26068251?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="logo" alt="Company logo" />
   </div>
+  <a href="javascript:void(0);" class="nav-item drawer" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
   <div class="nav-links">
-    <a href="javascript:void(0);" class="nav-item drawer" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
+  
     <a href="#" class="nav-item nav-item-home">Home</a>
     <a href="#" class="nav-item nav-item-about">About Us</a>
     <a href="#" class="nav-item nav-item-products">Products & Solutions</a>
-   
-      <a href="#" class="nav-item nav-item-news">News & Events</a>
-      <a href="#" class="nav-item nav-item-contact">Contact Us</a>
-      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/9abbd582b28d9386334ff61028001786637f4ca51c30ea602c4b35665847405e?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="user-icon" alt="User account icon" />
-   
+    <a href="#" class="nav-item nav-item-news">News & Events</a>
+    <a href="#" class="nav-item nav-item-contact">Contact Us</a>
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/9abbd582b28d9386334ff61028001786637f4ca51c30ea602c4b35665847405e?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="user-icon" alt="User account icon" />
   </div>
- 
 </nav>

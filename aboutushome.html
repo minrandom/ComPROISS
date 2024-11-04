@@ -1,17 +1,21 @@
 <style>
+ body {
+  margin: 0; /* Ensure the body has no margin */
+  padding: 0;
+
+}
     .about-us-section {
-      display: flex;
-      flex-direction: column;
+      display: block;
     }
     
     .about-us-container {
-      background-color: #f0f0f0;
-      display: flex;
+      background-color: #d9d9d9;
+      display: inline-flex;
       width: 100%;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 40px 80px;
+   
     }
     
     @media (max-width: 991px) {
@@ -28,6 +32,12 @@
       flex-direction: column;
     }
     
+    .hlcolor{
+    background: -webkit-linear-gradient(top left,#3E8CD6,#aac0d8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
     .text-content {
       display: flex;
       flex-direction: column;
@@ -45,10 +55,11 @@
     }
     
     .main-title {
-      font-size: 45px;
+      font-size: 50px;
       font-weight: 600;
       line-height: 50px;
     }
+    
     
     @media (max-width: 991px) {
       .main-title {
@@ -61,7 +72,6 @@
     .description {
       font-size: 22px;
       line-height: 30px;
-      margin-top: 26px;
     }
     
     @media (max-width: 991px) {
@@ -110,7 +120,7 @@
     }
     
     .service-column {
-      display: flex;
+    
       flex-direction: column;
       line-height: normal;
       width: 33%;
@@ -129,7 +139,7 @@
       text-shadow: -3px 3px 7px rgba(0, 0, 0, 0.25);
       position: relative;
       border-radius: 20px;
-      aspect-ratio: 0.768;
+
       align-self: stretch;
       color: #fff;
       white-space: nowrap;
@@ -150,7 +160,7 @@
     .service-image {
       position: absolute;
       inset: 0;
-      height: 100%;
+      height: 310;
       width: 100%;
       object-fit: cover;
       object-position: center;
@@ -179,7 +189,7 @@
           <div class="text-content">
             <h2 class="main-title">
               <span>Your</span>
-              <span>Trusted</span>
+              <span class="hlcolor">Trusted</span>
               <span>Medical Equipment</span>
               <br />
               <span>Supplier in Indonesia</span>

@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -31,22 +36,23 @@
     }
   }
 
-  @media (min-width: 991px) and (max-width: 1200px) {
+  @media (min-width: 950px) and (max-width: 1200px) {
     .nav-bar {
       padding: 10px 120px;
     }
   }
 
-  @media (min-width: 750px) and (max-width: 990px) {
+
+  @media (max-width: 950px) {
     .nav-bar {
-      padding: 10px 100px;
+      padding: 10px 70px;
     }
   }
 
-  @media (max-width: 749px) {
-    .nav-bar {
-      padding: 10px 80px;
-    }
+  .drawer {
+    width: 50px;
+    display: none; /* Initially hidden */
+    cursor: pointer; 
   }
 
   .nav-content {
@@ -58,7 +64,7 @@
   }
 
   .logo {
-    aspect-ratio: 1.8;
+
     object-fit: contain;
     object-position: center;
     width: 150px;
@@ -99,34 +105,104 @@
     }
   }
 
-  @media (max-width: 1200px) {
+  @media (min-width: 900px) and (max-width: 1200px) {
     .nav-item {
       font-size: 20px; /* Adjust navbar font size for smaller screens */
     }
   }
 
-  @media (max-width: 680px) {
-    .nav-item {
+  @media (max-width:900px) {
+    .nav-links {
       display: none; /* Hide all nav items */
     }
+    .nav-content{
+      gap: 70px;
+    }
     
-    .nav-links{
-      display: none;
+    .nav-item {
+      font-size: 30px; /* Adjust navbar font size for smaller screens */
+    }
+    .drawer-item{
+      text-align: center;
+    text-decoration: none;
+    color: inherit;
+      font-size: 50px;
     }
     .drawer {
-      width: 50px;
       display: block; /* Show the drawer icon */
+      width:200px;
+      cursor: pointer; 
+    }
+    .nav-bar{
+      justify-content: flex-start;
+    }
+    .logo {
+      object-fit: contain;
+      object-position: center;
+      width: 120px;
     }
   }
+
+  @media (max-width:550px) {
+   
+    .nav-content{
+      gap: 30px;
+    }
+    .drawer-item{
+      text-align: center;
+    text-decoration: none;
+    color: inherit;
+      font-size: 50px;
+    }
+    .menutext{
+      display:none;
+    }
+   
+    .nav-item {
+      font-size: 30px; /* Adjust navbar font size for smaller screens */
+    }
+    .nav-bar{
+      justify-content: center;
+      padding: 10px 20px;
+    }
+    .drawer {
+
+      width:100px;
+    }
+  }
+
+     /* Modal Styles */
+     .modal-overlay {
+            display: none; /* Hidden by default */
+            position: fixed; /* Cover the entire screen */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            z-index: 10; /* Overlay above other elements */
+        }
+
+        .dropdown-menu {
+          font: 200 20px Outfit; 
+            display: none; /* Hidden by default */
+            position: fixed; /* Position relative to the viewport */
+            top: 35%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%); /* Offset to center */
+            background-color: white; /* Background color */
+            border: 1px solid #ccc; /* Optional border */
+            z-index: 11; /* Above the overlay */
+            padding: 20px; /* Padding for content */
+            border-radius: 8px; /* Optional rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+        }
 
   .nav-item-home {
     width: 6vw;
   }
 
-  .drawer {
-    width: 50px;
-    display: none; /* Initially hidden */
-  }
+  
 
   .nav-item-about {
     width: 7vw;
@@ -154,16 +230,19 @@
     width: 2.5vw;
   }
 </style>
-
+</head>
+<body>
 <nav class="nav-bar" aria-label="Main navigation">
   <div class="nav-content">
     <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/13147525caf671a1280c0fcf2a092cfb029f6b108668e7bd9621bcbd26068251?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="logo" alt="Company logo" />
-  </div>
-  <a href="javascript:void(0);" class="nav-item drawer" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-  <div class="nav-links">
+    <a href="javascript:void(0);" class="drawer-item drawer" onclick="toggleDropdown()">
+      <i class="fa fa-bars"></i> <span class="menutext">Menu</span>
+    </a>
   
+  
+  </div>
+  
+  <div class="nav-links">
     <a href="#" class="nav-item nav-item-home">Home</a>
     <a href="#" class="nav-item nav-item-about">About Us</a>
     <a href="#" class="nav-item nav-item-products">Products & Solutions</a>
@@ -171,4 +250,37 @@
     <a href="#" class="nav-item nav-item-contact">Contact Us</a>
     <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/9abbd582b28d9386334ff61028001786637f4ca51c30ea602c4b35665847405e?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="user-icon" alt="User account icon" />
   </div>
+
+ 
 </nav>
+<div class="modal-overlay" id="modalOverlay" onclick="closeDropdown()"></div>
+<div class="dropdown-menu" id="dropdownMenu">
+    <a href="#" class="nav-item nav-item-home">Home</a></br></br>
+    <a href="#" class="nav-item nav-item-about">About Us</a></br></br>
+    <a href="#" class="nav-item nav-item-products">Products & Solutions</a></br></br>
+    <a href="#" class="nav-item nav-item-news">News & Events</a></br></br>
+    <a href="#" class="nav-item nav-item-contact">Contact Us</a></br></br>
+</div>
+<script>
+  function toggleDropdown() {
+      var dropdownMenu = document.getElementById("dropdownMenu");
+      var modalOverlay = document.getElementById("modalOverlay");
+      if (dropdownMenu.style.display === "block") {
+          dropdownMenu.style.display = "none"; // Hide the menu
+          modalOverlay.style.display = "none"; // Hide the overlay
+      } else {
+          dropdownMenu.style.display = "block"; // Show the menu
+          modalOverlay.style.display = "block"; // Show the overlay
+      }
+  }
+
+  function closeDropdown() {
+      var dropdownMenu = document.getElementById("dropdownMenu");
+      var modalOverlay = document.getElementById("modalOverlay");
+      dropdownMenu.style.display = "none"; // Hide the menu
+      modalOverlay.style.display = "none"; // Hide the overlay
+  }
+</script>
+
+</body>
+</html>

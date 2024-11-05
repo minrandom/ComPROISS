@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Material You Style Carousel</title>
+    <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+    <style>
+        * { box-sizing: border-box; }
+
+        body { font-family: sans-serif; background-color: #f0f0f0; } /* Light background */
+
+        .carousel {
+            /* Background removed */
+
+            width: 40%;  
+        }
+
+        .carousel-cell {
+            width: 250px; /* Width for card */
+            height: 350px; /* Height for card */
+            display: flex;
+           
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Hide overflow */
+            transition: transform 0.3s ease; /* Smooth scaling */
+            opacity: 0.7; /* Default opacity for inactive slides */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        .carousel-cell img {
+            display: flex;
+            width: 90%;
+            height: 90%;
+            gap:5px;
+            border-radius: 10px;
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+
+        /* Active slide style */
+        .carousel-cell.is-selected {
+        
+            opacity: 1; /* Make active slide fully opaque */
+        }
+
+        .carousel-cell.is-selected img {
+            transform: scale(1.1); /* Scale up the active slide */
+          
+        }
+
+ 
+
+        .button-container {
+            position: relative; /* Positioning for buttons */
+            bottom: 10px; /* Distance from the bottom */
+            top: 50px;
+            left: 10px; /* Distance from the left */
+            display: flex; /* Flexbox for alignment */
+            gap: 10px; /* Space between buttons */
+        }
+
+        .flickity-prev-next-button {
+            top: 30px;
+            position: relative;
+            width: 60px;
+            height: 60px;
+            background: transparent;
+            opacity: 0.8;
+        }
+        .flickity-prev-next-button:hover {
+            opacity: 1;
+        }
+        .flickity-prev-next-button .arrow {
+            fill: black;
+        }
+        .flickity-prev-next-button.no-svg {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="carousel js-flickity">
+            <div class="carousel-cell">
+                <img data-flickity-lazyload src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/3c672e9e146bd9faf3f7bdaf54cd660ecc74249d9129d6925e81d1fe65a34f28?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Carousel 1" />
+         
+            </div>
+            <div class="carousel-cell">
+                <img data-flickity-lazyload src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/3c672e9e146bd9faf3f7bdaf54cd660ecc74249d9129d6925e81d1fe65a34f28?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Carousel 2" />
+                
+            </div>
+            <div class="carousel-cell">
+                <img data-flickity-lazyload src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/3c672e9e146bd9faf3f7bdaf54cd660ecc74249d9129d6925e81d1fe65a34f28?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Carousel 3" />
+            </div>
+            <div class="carousel-cell">
+                <img data-flickity-lazyload src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/3c672e9e146bd9faf3f7bdaf54cd660ecc74249d9129d6925e81d1fe65a34f28?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Carousel 4" />
+            </div>
+            <div class="carousel-cell">
+                <img data-flickity-lazyload src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/3c672e9e146bd9faf3f7bdaf54cd660ecc74249d9129d6925e81d1fe65a34f28?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Carousel 5" />
+            </div>
+            <div class="carousel-cell">
+                <img data-flickity-lazyload src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/3c672e9e146bd9faf3f7bdaf54cd660ecc74249d9129d6925e81d1fe65a34f28?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Carousel 6" />
+            </div>
+        </div>
+     
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+        const flkty = new Flickity('.carousel', {
+            cellAlign: 'left', // Align cells to the left
+            contain: true, // Contain cells within the carousel
+            freeScroll:true,
+            wrapAround: true, // Infinite looping
+            pageDots: false, // Hide page dots
+            prevNextButtons: true, // Hide default buttons
+        });
+    </script>
+</body>
+</html>

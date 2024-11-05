@@ -1,0 +1,201 @@
+<style>
+    .news-events-container {
+      display: flex;
+      flex-direction: column;
+      font-family: Outfit, sans-serif;
+    }
+    
+    .news-events-wrapper {
+      background-color: #f0f0f0;
+      display: flex;
+      max-width: 100%;
+      flex-direction: column;
+      padding: 112px 80px 195px;
+    }
+    
+    .news-events-content {
+      align-self: center;
+      display: flex;
+
+      max-width: 100%;
+      flex-direction: column;
+      color: #000;
+      justify-content: center;
+    }
+    
+    .news-events-title {
+      font-size: 45px;
+      font-weight: 600;
+      line-height: 1;
+    }
+    
+    .all-events-button {
+      align-self: center;
+      display: flex;
+      margin-top: 375px;
+      width: 164px;
+      max-width: 100%;
+      flex-direction: column;
+      font-size: 20px;
+      font-weight: 400;
+      text-align: center;
+    }
+    
+    .all-events-link {
+      border-radius: 40px;
+      padding: 11px 16px;
+      border: 2px solid #81b3e2;
+    }
+    
+    .event-card {
+      border-radius: 20px;
+      background-color: #fff;
+      z-index: 10;
+      display: flex;
+      margin-top: -387px;
+      width: 345px;
+      max-width: 100%;
+      padding-bottom: 25px;
+      flex-direction: column;
+      font-weight: 500;
+    }
+    
+    .event-image {
+      aspect-ratio: 2.11;
+      object-fit: contain;
+      object-position: center;
+      max-width: 100%;
+    }
+    
+    .event-details {
+      display: flex;
+      width: 138px;
+      max-width: 100%;
+      flex-direction: column;
+      margin: 20px 0 0 20px;
+    }
+    
+    .event-name {
+      color: #000;
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+    
+    .event-date {
+      color: #a7ada9;
+      font-size: 18px;
+      line-height: 1;
+    }
+    
+    .event-location {
+      border-radius: 20px;
+      align-self: start;
+      margin-top: 20px;
+      font-size: 15px;
+      color: #3e8cd6;
+      white-space: nowrap;
+      line-height: 1;
+      padding: 1px 13px;
+      border: 1px solid #3e8cd6;
+    }
+
+
+
+.news-events-grid {
+    display: flex; /* Use flexbox to arrange cards in a row */
+    flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Space between cards */
+}
+.event-card {
+    border-radius: 20px;
+    background-color: #fff;
+    z-index: 10;
+    width: 30%; /* Set width to occupy one-third of the container */
+    max-width: 345px; /* Optional: Max width for cards */
+    padding-bottom: 25px;
+    font-weight: 500;
+    display: flex; /* Allow flex on the card */
+    flex-direction: column; /* Stack image and details vertically */
+    align-items: center; /* Center content inside card */
+}
+
+    
+    @media (max-width: 991px) {
+      .news-events-wrapper {
+        max-width: 100%;
+        padding: 100px 20px;
+      }
+    
+      .news-events-content {
+        max-width: 100%;
+      }
+    
+      .news-events-title {
+        max-width: 100%;
+        font-size: 40px;
+      }
+    
+      .all-events-button {
+        margin-top: 40px;
+      }
+    
+      .all-events-link {
+        padding: 0 20px;
+      }
+    
+      .event-card {
+        width: 90%; /* Adjust width for smaller screens */
+        max-width: 300px; /* Set max width for mobile */
+        margin: 10px auto; /* Center the card */
+     
+      }
+    
+      .event-details {
+        margin-left: 10px;
+      }
+    
+      .event-location {
+        white-space: initial;
+      }
+    }
+    </style>
+    
+    <section class="news-events-container">
+        <div class="news-events-wrapper">
+            <div class="news-events-content">
+                <h2 class="news-events-title">Latest News & Events</h2>
+                <div class="all-events-button">
+                    <a href="#" class="all-events-link">All Events</a>
+                </div>
+            </div>
+            <div class="news-events-grid"> <!-- Add grid container for cards -->
+                <article class="event-card">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/78bba582acacc0c7fa085b8048690401e0bb2a6c2bca3ffc9853fa8f9a0047b7?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Event image" class="event-image" />
+                    <div class="event-details">
+                        <h3 class="event-name">Event Name</h3>
+                        <time class="event-date">25 October 2024</time>
+                        <span class="event-location">Jakarta</span>
+                    </div>
+                </article>
+                <article class="event-card">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/78bba582acacc0c7fa085b8048690401e0bb2a6c2bca3ffc9853fa8f9a0047b7?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Event image" class="event-image" />
+                    <div class="event-details">
+                        <h3 class="event-name">Event Name</h3>
+                        <time class="event-date">25 October 2024</time>
+                        <span class="event-location">Jakarta</span>
+                    </div>
+                </article>
+                <article class="event-card">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/78bba582acacc0c7fa085b8048690401e0bb2a6c2bca3ffc9853fa8f9a0047b7?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Event image" class="event-image" />
+                    <div class="event-details">
+                        <h3 class="event-name">Event Name</h3>
+                        <time class="event-date">25 October 2024</time>
+                        <span class="event-location">Jakarta</span>
+                    </div>
+                </article>
+            </div> <!-- Close the grid container -->
+        </div>
+    </section>
+    

@@ -7,6 +7,7 @@
 <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
 <link href='css/iss.css' rel='stylesheet'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
 </head>
 <body>
 <!-- Nav Section-->
@@ -94,6 +95,57 @@
         </div>
       </div>
     </section>
+
+    <section class="products-section">
+      <div class="products-container">
+        <div class="product-info">
+          <h2 class="product-title">Discover our<br><span class="hlcolor">Products</span></h2>
+          <p class="product-description">Browse our range of advanced medical equipment and healthcare technology, tailored to meet the needs of hospitals and clinics across Indonesia.</p>
+          <a href="#" class="cta-prod-button" role="button" tabindex="0">All Products</a>
+        </div>
+        <div class="product-image" role="img" aria-label="Product showcase image">
+
+    
+            <div class="carousel js-flickity">
+                <div class="carousel-cell">
+                    <img data-flickity-lazyload src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/3c672e9e146bd9faf3f7bdaf54cd660ecc74249d9129d6925e81d1fe65a34f28?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Carousel 1" />
+                </div>
+                <div class="carousel-cell">
+                    <img data-flickity-lazyload src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/3c672e9e146bd9faf3f7bdaf54cd660ecc74249d9129d6925e81d1fe65a34f28?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Carousel 2" />
+                    
+                </div>
+                <div class="carousel-cell">
+                    <img data-flickity-lazyload src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/3c672e9e146bd9faf3f7bdaf54cd660ecc74249d9129d6925e81d1fe65a34f28?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Carousel 3" />
+                </div>
+                <div class="carousel-cell">
+                    <img data-flickity-lazyload src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/3c672e9e146bd9faf3f7bdaf54cd660ecc74249d9129d6925e81d1fe65a34f28?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Carousel 4" />
+                </div>
+                <div class="carousel-cell">
+                    <img data-flickity-lazyload src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/3c672e9e146bd9faf3f7bdaf54cd660ecc74249d9129d6925e81d1fe65a34f28?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Carousel 5" />
+                </div>
+                <div class="carousel-cell">
+                    <img data-flickity-lazyload src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/3c672e9e146bd9faf3f7bdaf54cd660ecc74249d9129d6925e81d1fe65a34f28?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Carousel 6" />
+                </div>
+            </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+        const flkty = new Flickity('.carousel', {
+            cellAlign: 'left', // Align cells to the left
+            contain: true, // Contain cells within the carousel
+            freeScroll:true,
+            wrapAround: true, // Infinite looping
+            pageDots: false, // Hide page dots
+            prevNextButtons: true, // Hide default buttons
+        });
+    </script>
 
 <script>
   function toggleDropdown() {

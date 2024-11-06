@@ -10,17 +10,33 @@
       display: flex;
       max-width: 100%;
       flex-direction: column;
-      padding: 112px 80px 195px;
+      padding: 2.7vw 13vw 2.7vw;
     }
+
+    /* @media (min-width:1440px)and (max-width:1650px) {    
+      .news-events-wrapper {
+        padding: 40px 250px 40px;
+       }
+      }
+    @media (min-width:1040px)and (max-width:1440px) {    
+      .news-events-wrapper {
+        padding: 40px 150px 40px;
+       }
+      }*/
+    @media (min-width:995px)and (max-width:1180px) {    
+      .news-events-wrapper {
+        padding: 40px 120px 40px;
+       }
+      }
     
     .news-events-content {
-      align-self: center;
+      align-self: flex-start;
       display: flex;
 
       max-width: 100%;
       flex-direction: column;
       color: #000;
-      justify-content: center;
+      justify-content: flex-start;
     }
     
     .news-events-title {
@@ -32,36 +48,89 @@
     .all-events-button {
       align-self: center;
       display: flex;
-      margin-top: 375px;
-      width: 164px;
+      width: 150px;
       max-width: 100%;
       flex-direction: column;
       font-size: 20px;
       font-weight: 400;
       text-align: center;
+      
     }
     
     .all-events-link {
       border-radius: 40px;
       padding: 11px 16px;
       border: 2px solid #81b3e2;
+      text-decoration: none;
+      color: inherit;
     }
     
     .event-card {
-      border-radius: 20px;
+      border-radius: 30px;
       background-color: #fff;
       z-index: 10;
       display: flex;
-      margin-top: -387px;
-      width: 345px;
+
+      margin: 30px 10px;
+      width: 22.5vw;
+      height: 19.5vw;
       max-width: 100%;
       padding-bottom: 25px;
       flex-direction: column;
       font-weight: 500;
+      transition: box-shadow 0.3s ease;
     }
-    
+
+    /* @media (min-width:2400px) {  
+    .event-card {
+      width: 550px;
+      height: 500px;
+    }
+  }
+
+  @media (min-width:2250px) and (max-width:2400px) {    
+         .event-card {
+           width: 500px;     
+           height: 425px;
+       }
+      }
+
+  @media (min-width:2000px)and (max-width:2250px) {    
+         .event-card {
+           width: 420px; 
+           height: 355px;    
+       }
+      }
+
+    @media (min-width:1650px)and (max-width:1800px) {    
+         .event-card {
+           width: 300px;  
+           height: 255px;     
+       }
+      }
+
+      @media (min-width:1300px)and (max-width:1650px) {    
+         .event-card {
+           width: 250px;  
+           height: 215px;
+           font-weight: 400;   
+       }
+      }
+      @media (min-width:1000px)and (max-width:1300px) {    
+         .event-card {
+           width: 200px;  
+           height: 170;
+           font-weight: 400;   
+       }
+      } */
+
+      .event-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect on hover */
+}
+
+  
     .event-image {
-      aspect-ratio: 2.11;
+      border-radius: 30px 30px 0px 0px;
       object-fit: contain;
       object-position: center;
       max-width: 100%;
@@ -69,30 +138,35 @@
     
     .event-details {
       display: flex;
-      width: 138px;
+      width: 100%;
       max-width: 100%;
       flex-direction: column;
-      margin: 20px 0 0 20px;
+      margin: 40px 0 0 40px;
     }
     
     .event-name {
       color: #000;
-      font-size: 25px;
+      font-size: 35px;
       font-weight: 600;
       line-height: 1.2;
+    }
+    .event-name ,h3{
+      margin-block-start: 5px;
+      margin-block-end: 10px;
     }
     
     .event-date {
       color: #a7ada9;
-      font-size: 18px;
+      font-size: 25px;
       line-height: 1;
     }
     
     .event-location {
-      border-radius: 20px;
+      width: 100px;
+      border-radius: 30px;
       align-self: start;
-      margin-top: 20px;
-      font-size: 15px;
+      margin-top: 40px;
+      font-size: 20px;
       color: #3e8cd6;
       white-space: nowrap;
       line-height: 1;
@@ -100,41 +174,79 @@
       border: 1px solid #3e8cd6;
     }
 
-
-
 .news-events-grid {
     display: flex; /* Use flexbox to arrange cards in a row */
-    flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
-    justify-content: center; /* Center the items horizontally */
-    gap: 20px; /* Space between cards */
-}
-.event-card {
-    border-radius: 20px;
-    background-color: #fff;
-    z-index: 10;
-    width: 30%; /* Set width to occupy one-third of the container */
-    max-width: 345px; /* Optional: Max width for cards */
-    padding-bottom: 25px;
-    font-weight: 500;
-    display: flex; /* Allow flex on the card */
-    flex-direction: column; /* Stack image and details vertically */
-    align-items: center; /* Center content inside card */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row; /* Allow wrapping to the next line if necessary */
+     /* Center the items horizontally */
+  
 }
 
-    
-    @media (max-width: 991px) {
+    @media (min-width:1800px)and (max-width:2250px) {    
+            .event-details {
+              margin: 25px 0 0 25px;  
+              }
+
+          .event-name {
+              color: #000;
+              font-size: 25px;
+              font-weight: 600;
+              line-height: 1.2;
+            }
+
+            .event-location{
+              margin-top: 20px;
+            }
+
+    }
+
+    @media (min-width:1000px)and (max-width:1800px) {    
+            .event-details {
+              margin: 15px 0px 0px 15px;  
+              }
+
+          .event-name {
+              color: #000;
+              font-size: 20px;
+              font-weight: 600;
+              line-height: 1;
+            }
+
+            .event-date {
+              color: #a7ada9;
+              font-size: 15px;
+              line-height: 1;
+             }
+
+            .event-location{
+              margin-top: 10px;
+              width: 100px;
+              font-size: 20px;
+            }
+
+    }
+      
+    @media (max-width: 1000px) {
       .news-events-wrapper {
+        
         max-width: 100%;
-        padding: 100px 20px;
+        padding: 50px 50px;
       }
     
       .news-events-content {
+        align-self: center;
         max-width: 100%;
+      }
+      .news-events-grid {
+        flex-direction:column;
+        gap: 20px;
       }
     
       .news-events-title {
         max-width: 100%;
         font-size: 40px;
+       
       }
     
       .all-events-button {
@@ -144,31 +256,35 @@
       .all-events-link {
         padding: 0 20px;
       }
-    
+
       .event-card {
-        width: 90%; /* Adjust width for smaller screens */
-        max-width: 300px; /* Set max width for mobile */
+        width: 100%; /* Adjust width for smaller screens */
+        max-width: 400px; /* Set max width for mobile */
         margin: 10px auto; /* Center the card */
-     
+       max-height: 350;
+           height: 100%;
+           font-weight: 400;   
       }
     
       .event-details {
-        margin-left: 10px;
+        margin: 10px 0px 0px 10px;  
       }
     
+
+             
       .event-location {
         white-space: initial;
+        margin-top: 20px;
       }
+      
     }
     </style>
     
     <section class="news-events-container">
         <div class="news-events-wrapper">
             <div class="news-events-content">
-                <h2 class="news-events-title">Latest News & Events</h2>
-                <div class="all-events-button">
-                    <a href="#" class="all-events-link">All Events</a>
-                </div>
+                <h2 class="news-events-title">Latest <span class="hlcolor"> News & Events</span></h2>
+              
             </div>
             <div class="news-events-grid"> <!-- Add grid container for cards -->
                 <article class="event-card">
@@ -195,7 +311,10 @@
                         <span class="event-location">Jakarta</span>
                     </div>
                 </article>
-            </div> <!-- Close the grid container -->
+            </div>
+            <div class="all-events-button">
+              <a href="#" class="all-events-link">All Events</a>
+          </div> <!-- Close the grid container -->
         </div>
     </section>
     

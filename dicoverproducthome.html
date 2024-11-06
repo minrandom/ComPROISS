@@ -1,197 +1,213 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
 <style>
+    
+  .products-section {
+    padding: 50px 5px 30px 250px ;
+    font-family: Outfit, sans-serif;
+    color: #000;
+  }
+  
+  @media (min-width: 1800px) {
     .products-section {
-      padding: 50px 5px 30px 250px ;
-      font-family: Outfit, sans-serif;
-      color: #000;
+    padding: 50px 5px 30px 350px ;
     }
-    
-    @media (min-width: 1800px) {
-      .products-section {
-      padding: 50px 5px 30px 350px ;
-      }
-    }
+  }
 
-    @media (max-width: 1800px)and (min-width: 1600px) {
-      .products-section {
-      padding: 50px 5px 30px 300px ;
-      }
+  @media (max-width: 1800px)and (min-width: 1600px) {
+    .products-section {
+    padding: 50px 5px 30px 300px ;
     }
-    @media (max-width: 1400px)and (min-width: 1000px) {
-      .products-section {
-      padding: 50px 5px 30px 150px ;
-      }
+  }
+  @media (max-width: 1400px)and (min-width: 1000px) {
+    .products-section {
+    padding: 50px 5px 30px 150px ;
     }
+  }
 
-    @media (max-width: 1000px){
-      .products-section {
-      padding: 50px 5px 30px 50px ;
-      }
+  @media (max-width: 1000px){
+    .products-section {
+    padding: 50px 5px 30px 50px ;
     }
+  }
 
 
-    .products-container {
-      display: flex;
-      gap: 20px;
-    }
-    
-    .product-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 43%;
-    }
-    
-    .product-title {
-      font-size: 60px;
-      font-weight: 700;
-      line-height: 80px;
-    }
+  .products-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 43%;
+  }
+  
+  .product-title {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 80px;
+  }
 
-    .product-title,h2{
-      margin-block-end: 5px;
-      margin-block-start: 2px;
-      margin-inline-start: 2px;
-    }
-    
+  .product-title,h2{
+    margin-block-end: 5px;
+    margin-block-start: 2px;
+    margin-inline-start: 2px;
+  }
+  
+  .product-description {
+    font-size: 25px;
+    line-height: 30px;
+    margin: 26px 0;
+  }
+
+  @media (max-width: 650px){
     .product-description {
-      font-size: 25px;
-      line-height: 30px;
-      margin: 26px 0;
+      font-size: 16px;
+      line-height: 20px;
     }
-
-    @media (max-width: 650px){
-      .product-description {
-        font-size: 16px;
-        line-height: 20px;
-      }
-    }
+  }
 
 
 
-    .product-description,p{
-      margin-block-end: 5px;
-      margin-block-start: 2px;
-      margin-inline-start: 2px;
-    }
-    
-    .cta-prod-button {
-      margin-block-start: 10px;
-      margin-block-end: 30px;
-      text-decoration: none;
-      color: inherit;
-      display: inline-block;
-      width: 164px;
-      font-size: 20px;
-      text-align: center;
-      border-radius: 40px;
-      padding: 11px 16px;
-      border: 2px solid #81B3E2;
-      cursor: pointer;
-      transition: background-color 0.6s ease;
-    }
+  .product-description,p{
+    margin-block-end: 5px;
+    margin-block-start: 2px;
+    margin-inline-start: 2px;
+  }
+  
+  .cta-prod-button {
+    margin-block-start: 10px;
+    margin-block-end: 30px;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    width: 164px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 40px;
+    padding: 11px 16px;
+    border: 2px solid #81B3E2;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+  }
 
-    .cta-prod-button:hover {
-    background-color: #81b3e2; /* Change background color on hover */
-   
+  .cta-prod-button:hover {
+  background-color: #81b3e2; /* Change background color on hover */
+ 
 }
-    
-    .carousel {
+  
+  .carousel {
+    width: 100%;
+  
+  }
+  .product-image{
+    width: 60%;
+  }
+  
+  @media (max-width: 1000px) {
+    .products-container {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  
+    .product-info,
+    .product-image {
       width: 100%;
-    
     }
-    .product-image{
-      width: 60%;
+  
+    .product-info {
+      margin-top: 40px;
     }
-    
-    @media (max-width: 1000px) {
-      .products-container {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0;
-      }
-    
-      .product-info,
-      .product-image {
-        width: 100%;
-      }
-    
-      .product-info {
-        margin-top: 40px;
-      }
-    
-      .product-title {
-        font-size: 40px;
-        line-height: 49px;
-      }
-    
-      .cta-prod-button{
-        padding: 11px 20px;
-      }
-    
-     
+  
+    .product-title {
+      font-size: 40px;
+      line-height: 49px;
     }
+  
+    .cta-prod-button{
+      padding: 11px 20px;
+    }
+  
+   
+  }
 
-    /* carousel */
-    .carousel-cell {
-            width: 300px; /* Width for card */
-            height: 450px; /* Height for card */
-            display: flex;
-           
-            justify-content: center;
-            align-items: center;
-            overflow: hidden; /* Hide overflow */
-            transition: transform 0.3s ease; /* Smooth scaling */
-            opacity: 0.7; /* Default opacity for inactive slides */
-            border-radius: 10px; /* Rounded corners */
+  /* carousel */
+  .carousel-cell {
+          width: 300px; /* Width for card */
+          height: 450px; /* Height for card */
+          display: flex;
+         
+          justify-content: center;
+          align-items: center;
+          overflow: hidden; /* Hide overflow */
+          transition: transform 0.3s ease; /* Smooth scaling */
+          opacity: 0.7; /* Default opacity for inactive slides */
+          border-radius: 10px; /* Rounded corners */
+      }
+
+      .carousel-cell img {
+          display: flex;
+          width: 90%;
+          height: 90%;
+          gap:5px;
+          border-radius: 10px;
+          object-fit: cover; /* Maintain aspect ratio */
+      }
+
+      .carousel-cell .text-overlay {
+          position: absolute; /* Absolute positioning */
+          top: 50%; /* Center vertically */
+          left: 50%; /* Center horizontally */
+          transform: translate(-50%, -50%); /* Adjust to center */
+          color: white; /* Text color */
+          font-size: 40px;
+          font-weight: 700;
+          padding: 10px; /* Padding around the text */
+          border-radius: 5px; /* Rounded corners for text background */
+          text-align: center; /* Center text */
         }
 
-        .carousel-cell img {
-            display: flex;
-            width: 90%;
-            height: 90%;
-            gap:5px;
-            border-radius: 10px;
-            object-fit: cover; /* Maintain aspect ratio */
-        }
+      /* Active slide style */
+      .carousel-cell.is-selected {
+      
+          opacity: 1; /* Make active slide fully opaque */
+      }
 
-        /* Active slide style */
-        .carousel-cell.is-selected {
+      .carousel-cell.is-selected img {
+          transform: scale(1.1); /* Scale up the active slide */
         
-            opacity: 1; /* Make active slide fully opaque */
-        }
+      }
 
-        .carousel-cell.is-selected img {
-            transform: scale(1.1); /* Scale up the active slide */
-          
-        }
+      .button-container {
+          position: relative; /* Positioning for buttons */
+          bottom: 10px; /* Distance from the bottom */
+          top: 50px;
+          left: 10px; /* Distance from the left */
+          display: flex; /* Flexbox for alignment */
+          gap: 50px !important; /* Space between buttons */
+      }
 
-        .button-container {
-            position: relative; /* Positioning for buttons */
-            bottom: 10px; /* Distance from the bottom */
-            top: 50px;
-            left: 10px; /* Distance from the left */
-            display: flex; /* Flexbox for alignment */
-            gap: 10px; /* Space between buttons */
-        }
+      .flickity-prev-next-button {
+          top: 30px !important;
+          position: relative !important;
+          width: 60px;
+          height: 60px;
+          background: transparent;
+          opacity: 0.8;
+          gap: 20px;
+      }
+      .flickity-prev-next-button:hover {
+          opacity: 1;
+      }
+      .flickity-prev-next-button .arrow {
+          fill: black;
+      }
+      .flickity-prev-next-button.no-svg {
+          color: white;
+      }
 
-        .flickity-prev-next-button {
-            top: 30px;
-            position: relative !important;
-            width: 60px;
-            height: 60px;
-            background: transparent;
-            opacity: 0.8;
-        }
-        .flickity-prev-next-button:hover {
-            opacity: 1;
-        }
-        .flickity-prev-next-button .arrow {
-            fill: black;
-        }
-        .flickity-prev-next-button.no-svg {
-            color: white;
-        }
 
 
 
@@ -211,23 +227,28 @@
             <div class="carousel js-flickity">
                 <div class="carousel-cell">
                     <img data-flickity-lazyload src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/3c672e9e146bd9faf3f7bdaf54cd660ecc74249d9129d6925e81d1fe65a34f28?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Carousel 1" />
-                </div>
+                    <div class="text-overlay">Product 1 Description</div>
+                  </div>
                 <div class="carousel-cell">
                     <img data-flickity-lazyload src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/3c672e9e146bd9faf3f7bdaf54cd660ecc74249d9129d6925e81d1fe65a34f28?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Carousel 2" />
-                    
+                    <div class="text-overlay">Product 2 Description</div>
                 </div>
                 <div class="carousel-cell">
                     <img data-flickity-lazyload src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/3c672e9e146bd9faf3f7bdaf54cd660ecc74249d9129d6925e81d1fe65a34f28?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Carousel 3" />
-                </div>
+                 <div class="text-overlay">Product 3 Description</div>
+                  </div>
                 <div class="carousel-cell">
                     <img data-flickity-lazyload src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/3c672e9e146bd9faf3f7bdaf54cd660ecc74249d9129d6925e81d1fe65a34f28?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Carousel 4" />
-                </div>
+                 <div class="text-overlay">Product 4 Description</div>
+                  </div>
                 <div class="carousel-cell">
                     <img data-flickity-lazyload src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/3c672e9e146bd9faf3f7bdaf54cd660ecc74249d9129d6925e81d1fe65a34f28?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Carousel 5" />
-                </div>
+                 <div class="text-overlay">Product 5 Description</div>
+                  </div>
                 <div class="carousel-cell">
                     <img data-flickity-lazyload src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/3c672e9e146bd9faf3f7bdaf54cd660ecc74249d9129d6925e81d1fe65a34f28?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Carousel 6" />
-                </div>
+                 <div class="text-overlay">Product 6 Description</div>
+                  </div>
             </div>
 
 

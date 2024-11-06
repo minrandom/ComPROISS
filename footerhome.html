@@ -1,0 +1,323 @@
+<style>
+    .footer {
+      background-color: #191e22;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 100vw;
+      margin: 0 auto -5px calc(50% - 50vw);
+      padding: 46px 162px 64px 144px;
+    }
+    
+    @media (max-width: 991px) {
+      .footer {
+        padding: 0 20px 100px;
+      }
+    }
+    
+    .footer-content {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    
+    @media (max-width: 991px) {
+      .footer-content {
+        max-width: 100%;
+      }
+    }
+    
+    .footer-links {
+      display: flex;
+      width: 100%;
+      align-items: flex-start;
+      gap: 40px 98px;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      margin-right: 172px;
+      font: 18px Outfit, sans-serif;
+    }
+    
+    @media (max-width: 991px) {
+      .footer-links {
+        max-width: 100%;
+      }
+    }
+    
+    @media (max-width: 640px) {
+      .footer-links {
+        padding-right: 172px;
+      }
+    }
+    
+    .nav-column {
+      display: flex;
+      flex-direction: column;
+      white-space: nowrap;
+      justify-content: flex-start;
+      flex-grow: 1;
+      width: 57px;
+    }
+    
+    @media (max-width: 991px) {
+      .nav-column {
+        white-space: initial;
+      }
+    }
+    
+    .nav-link {
+      color: #fff;
+      font-weight: 500;
+    }
+    
+    .nav-link-secondary {
+      margin-top: 23px;
+      width: 100%;
+      color: #989da2;
+      font-weight: 300;
+    }
+    
+    @media (max-width: 991px) {
+      .nav-link-secondary {
+        white-space: initial;
+      }
+    }
+    
+    .products-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex-grow: 1;
+      width: 166px;
+    }
+    
+    .product-list {
+      display: flex;
+      margin-top: 23px;
+      max-width: 100%;
+      width: 180px;
+      flex-direction: column;
+      color: #989da2;
+      font-weight: 300;
+      justify-content: flex-start;
+    }
+    
+    .product-item {
+      width: 100%;
+      margin-top: 10px;
+    }
+    
+    @media (max-width: 991px) {
+      .product-item {
+        padding-right: 20px;
+      }
+    }
+    
+    .contact-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex-grow: 1;
+      width: 197px;
+    }
+    
+    .contact-info {
+      display: flex;
+      margin-top: 23px;
+      max-width: 100%;
+      width: 211px;
+      flex-direction: column;
+      color: #989da2;
+      font-weight: 300;
+      justify-content: flex-start;
+    }
+    
+    .contact-title {
+      width: 100%;
+      color: #fff;
+      font-weight: 500;
+    }
+    
+    .contact-detail {
+      margin-top: 10px;
+      width: 100%;
+    }
+    
+    .contact-email {
+      margin-top: 10px;
+      width: 100%;
+      color: #3e8cd6;
+      white-space: nowrap;
+    }
+    
+    @media (max-width: 991px) {
+      .contact-email {
+        white-space: initial;
+      }
+    }
+    
+    .footer-bottom {
+      display: flex;
+      margin-top: 50px;
+      width: 100%;
+      align-items: flex-end;
+      gap: 18px 892px;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+    
+    @media (max-width: 991px) {
+      .footer-bottom {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+    
+    .footer-logo {
+      aspect-ratio: 1.96;
+      object-fit: contain;
+      object-position: center;
+      width: 104px;
+    }
+    
+    .social-icons {
+      display: flex;
+      align-items: flex-end;
+      gap: 23px;
+      justify-content: flex-start;
+    }
+    
+    .social-icon {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 20px;
+    }
+    
+    .footer-divider {
+      min-width: 240px;
+      width: 1051px;
+      height: 0;
+      flex-grow: 1;
+      border: 1px solid #989da2;
+    }
+    
+    .footer-copyright {
+      display: flex;
+      margin-top: 11px;
+      width: 100%;
+      align-items: center;
+      gap: 40px 140px;
+      color: #989da2;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      font: 300 18px Outfit, sans-serif;
+    }
+    
+    @media (max-width: 991px) {
+      .footer-copyright {
+        max-width: 100%;
+      }
+    }
+    
+    .copyright-logo {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 35px;
+      align-self: stretch;
+      margin: auto 0;
+    }
+    
+    .copyright-links {
+      align-self: stretch;
+      display: flex;
+      min-width: 240px;
+      align-items: flex-start;
+      gap: 40px 81px;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      width: 857px;
+      margin: auto 0;
+    }
+    
+    @media (max-width: 991px) {
+      .copyright-links {
+        max-width: 100%;
+      }
+    }
+    
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    </style>
+    
+    <footer class="footer">
+      <div class="footer-content">
+        <nav class="footer-links">
+          <div class="nav-column">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link-secondary">Careers</a>
+          </div>
+          <a href="#" class="nav-link">About Us</a>
+          <div class="products-column">
+            <h3 class="nav-link">Products & Solutions</h3>
+            <ul class="product-list">
+              <li class="product-item">Critical Care</li>
+              <li class="product-item">Operating Rooms</li>
+              <li class="product-item">Surgery</li>
+              <li class="product-item">Cardiology</li>
+              <li class="product-item">Radiation Oncology</li>
+              <li class="product-item">Urology</li>
+              <li class="product-item">Anaesthesia</li>
+            </ul>
+          </div>
+          <a href="#" class="nav-link">News & Events</a>
+          <div class="contact-column">
+            <h3 class="nav-link">Contact Us</h3>
+            <div class="contact-info">
+              <h4 class="contact-title">Main Office</h4>
+              <address class="contact-detail">
+                Jln. Mampang Prapatan Raya No. 1<br>
+                Mampang Prapatan<br>
+                Jakarta, Indonesia
+              </address>
+              <p class="contact-detail">
+                Telp: <a href="tel:+622179180345">+62 21 79 18 03 45</a><br>
+                Fax: <a href="tel:+622179180344">+62 21 79 18 03 44</a>
+              </p>
+              <a href="mailto:enquiries@indosopha.com" class="contact-email">enquiries@indosopha.com</a>
+            </div>
+          </div>
+        </nav>
+        <div class="footer-bottom">
+          <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/aadeeb5caf8c39e7733c447c06725cb9da43615fd617cdd0058b52d470637d8e?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Company Logo" class="footer-logo">
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook">
+              <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/7f618d4794dc1d00e28da682f6798fce8009ae0a21c0dcfa9cd586a041fa0a90?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="" class="social-icon">
+            </a>
+            <a href="#" aria-label="Twitter">
+              <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/3af82549a778ec023864328a9b27d054e1da645df1fe01d63a636c6a2542baaa?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="" class="social-icon">
+            </a>
+          </div>
+          <hr class="footer-divider">
+        </div>
+        <div class="footer-copyright">
+          <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/9abbd582b28d9386334ff61028001786637f4ca51c30ea602c4b35665847405e?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Copyright Symbol" class="copyright-logo">
+          <div class="copyright-links">
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>

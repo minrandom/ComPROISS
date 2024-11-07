@@ -1,0 +1,267 @@
+<style>
+    .recent-projects {
+      border-radius: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .projects-container {
+      background-color: #fff;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 66px 80px;
+    }
+    
+    @media (max-width: 991px) {
+      .projects-container {
+        max-width: 100%;
+        padding: 0 20px;
+      }
+    }
+    
+    .content-wrapper {
+      display: flex;
+      width: 100%;
+      max-width: 1043px;
+      flex-direction: column;
+    }
+    
+    @media (max-width: 991px) {
+      .content-wrapper {
+        max-width: 100%;
+      }
+    }
+    
+    .header-content {
+      align-self: center;
+      display: flex;
+      width: 786px;
+      max-width: 100%;
+      flex-direction: column;
+      font-family: Outfit, sans-serif;
+      color: #000;
+      text-align: center;
+      justify-content: center;
+    }
+    
+    .section-title {
+      font-size: 45px;
+      font-weight: 700;
+      line-height: 1;
+    }
+    
+    @media (max-width: 991px) {
+      .section-title {
+        max-width: 100%;
+        font-size: 40px;
+      }
+    }
+    
+    .section-description {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 30px;
+      margin-top: 26px;
+    }
+    
+    @media (max-width: 991px) {
+      .section-description {
+        max-width: 100%;
+      }
+    }
+    
+    .projects-grid {
+      margin-top: 57px;
+    }
+    
+    @media (max-width: 991px) {
+      .projects-grid {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+    
+    .projects-row {
+      gap: 20px;
+      display: flex;
+    }
+    
+    @media (max-width: 991px) {
+      .projects-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+    }
+    
+    .project-column {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 33%;
+      margin-left: 0;
+    }
+    
+    @media (max-width: 991px) {
+      .project-column {
+        width: 100%;
+      }
+    }
+    
+    .project-card {
+      border-radius: 20px;
+      background-color: #bed4ec;
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      overflow: hidden;
+      font-family: Outfit, sans-serif;
+      width: 100%;
+    }
+    
+    @media (max-width: 991px) {
+      .project-card {
+        margin-top: 34px;
+      }
+    }
+    
+    .card-content {
+      border-radius: 20px;
+      background-color: #f0f0f0;
+      display: flex;
+      padding-bottom: 19px;
+      flex-direction: column;
+    }
+    
+    .project-image {
+      aspect-ratio: 1.85;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+    }
+    
+    .project-details {
+      align-self: center;
+      display: flex;
+      margin-top: 14px;
+      width: 290px;
+      max-width: 100%;
+      flex-direction: column;
+      justify-content: start;
+    }
+    
+    .project-header {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: start;
+    }
+    
+    .project-status {
+      color: #989da2;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 34px;
+    }
+    
+    .project-name {
+      color: #000;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 22px;
+    }
+    
+    .project-info {
+      color: #000;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+      margin-top: 5px;
+    }
+    
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    </style>
+    
+    <section class="recent-projects">
+      <div class="projects-container">
+        <div class="content-wrapper">
+          <header class="header-content">
+            <h2 class="section-title">What We've Recently Done</h2>
+            <p class="section-description">We have successfully completed impactful projects involving hospital renovations and supplied medical equipment, with several projects currently underway.</p>
+          </header>
+          <div class="projects-grid">
+            <div class="projects-row">
+              <article class="project-column">
+                <div class="project-card">
+                  <div class="card-content">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/6293762610946a4a89ff8c7d40268cb242a4f74172ab91d849b79320ccc0e59c?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="project-image" alt="Ongoing renovations project" />
+                    <div class="project-details">
+                      <header class="project-header">
+                        <p class="project-status">Ongoing Renovations</p>
+                        <h3 class="project-name">RST Soejono Magelang<br />RSAD Pelamonia Makassar<br />RSAD Dustira Cimahi<br />RSAD Marthen Indey Jayapura</h3>
+                      </header>
+                      <p class="project-info">
+                        <span class="visually-hidden">Project details:</span>
+                        <strong>Client:</strong> Ministry of Defense RI<br />
+                        <strong>Start Date:</strong> January 2024
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="project-column">
+                <div class="project-card">
+                  <div class="card-content">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/60e943daeed3053d97b8c3bb7c3573dd38be48f91b558e31d18d6a620345f724?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="project-image" alt="Renovation project in Denpasar, Bali" />
+                    <div class="project-details">
+                      <header class="project-header">
+                        <p class="project-status">Renovation</p>
+                        <h3 class="project-name">RSAD Udayana Denpasar, Bali</h3>
+                      </header>
+                      <p class="project-info">
+                        <span class="visually-hidden">Project details:</span>
+                        <strong>Client:</strong> Ministry of Defense RI<br />
+                        <strong>Start Date:</strong> January 2022<br />
+                        <strong>Completion Date:</strong> Nov 2023
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="project-column">
+                <div class="project-card">
+                  <div class="card-content">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/c40fd5530a449b44747a89c91afae978f1a475a2c66188a3fe669006e59bf45d?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="project-image" alt="Renovation project in Medan" />
+                    <div class="project-details">
+                      <header class="project-header">
+                        <p class="project-status">Renovation</p>
+                        <h3 class="project-name">RSAD Putri Hijau Medan</h3>
+                      </header>
+                      <p class="project-info">
+                        <span class="visually-hidden">Project details:</span>
+                        <strong>Client:</strong> Ministry of Defense RI<br />
+                        <strong>Start Date:</strong> January 2021<br />
+                        <strong>Completion Date:</strong> Nov 2022
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

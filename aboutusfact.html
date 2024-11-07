@@ -1,0 +1,46 @@
+<style>
+    .about-us { display: flex; flex-direction: column; }
+    .about-description { align-self: center; width: 100%; max-width: 895px; color: #000; text-align: center; font: 600 30px/35px Outfit, sans-serif; }
+    .stats-container { margin-top: 60px; width: 100%; }
+    .stats-grid { gap: 20px; display: flex; }
+    .stat-card { border-radius: 40px; background-color: #f0f0f0; display: flex; flex-grow: 1; flex-direction: column; font-family: Outfit, sans-serif; justify-content: start; width: 100%; padding: 28px 31px; }
+    .stat-icon { aspect-ratio: 1; object-fit: contain; object-position: center; width: 40px; }
+    .stat-number { color: #000; font-size: 45px; font-weight: 600; line-height: 1; margin-top: 10px; }
+    .stat-description { color: #989da2; font-size: 20px; font-weight: 500; line-height: 25px; margin-top: 10px; }
+    
+    @media (max-width: 991px) {
+      .about-description { max-width: 100%; }
+      .stats-container { max-width: 100%; margin-top: 40px; }
+      .stats-grid { flex-direction: column; align-items: stretch; gap: 0; }
+      .stat-card { margin-top: 15px; padding: 28px 20px; }
+      .stat-number { font-size: 40px; }
+    }
+    </style>
+    
+    <section class="about-us">
+      <p class="about-description">With decades of expertise, we deliver advanced medical equipment and solutions, ensuring that healthcare facilities in Indonesia can provide the highest quality patient care.</p>
+      <div class="stats-container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/a8df9dac41e4ecbc0326eda92d1ea3ff13dd05b70348622ea4bb1a5da29c7a97?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Hospital icon" class="stat-icon" />
+            <p class="stat-number">519+</p>
+            <p class="stat-description">Hospitals Equipped<br />Across Indonesia</p>
+          </div>
+          <div class="stat-card">
+            <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/e1ea0362f9122e0bb698ea6929002db6beebb00484b137316eda482895cd818a?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Partnership icon" class="stat-icon" />
+            <p class="stat-number">19+</p>
+            <p class="stat-description">Trusted International<br />Partners</p>
+          </div>
+          <div class="stat-card">
+            <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/a4972fdd4b5d8b6743de4f26f988658a5467dd6938f2e93c088aa4caea9c3490?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Employee icon" class="stat-icon" />
+            <p class="stat-number">170+</p>
+            <p class="stat-description">Highly Skilled<br />Employees</p>
+          </div>
+          <div class="stat-card">
+            <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/c21ebb9ac1ef401e244b79c6cd467f73511392377e477f6c4d1eb5c52293c95e?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Office building icon" class="stat-icon" />
+            <p class="stat-number">19+</p>
+            <p class="stat-description">Offices Across<br />Indonesia</p>
+          </div>
+        </div>
+      </div>
+    </section>

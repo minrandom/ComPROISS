@@ -1,0 +1,75 @@
+<style>
+    .trusted-partner {
+      display: flex;
+      flex-direction: column;
+      font-family: Outfit, sans-serif;
+      color: #000;
+    }
+    
+    .content-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 43px;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+    
+    .text-content {
+      align-self: stretch;
+      display: flex;
+      min-width: 240px;
+      flex-direction: column;
+      justify-content: center;
+      width: 525px;
+      margin: auto 0;
+    }
+    
+    .main-heading {
+      font-size: 45px;
+      font-weight: 700;
+      line-height: 50px;
+    }
+    
+    .description {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 30px;
+      margin-top: 26px;
+    }
+    
+    .partner-image {
+      aspect-ratio: 0.91;
+      object-fit: contain;
+      object-position: center;
+      width: 497px;
+      border-radius: 20px;
+      align-self: stretch;
+      min-width: 240px;
+      margin: auto 0;
+    }
+    
+    @media (max-width: 991px) {
+      .content-wrapper,
+      .text-content,
+      .main-heading,
+      .description,
+      .partner-image {
+        max-width: 100%;
+      }
+    
+      .main-heading {
+        font-size: 40px;
+        line-height: 49px;
+      }
+    }
+    </style>
+    
+    <section class="trusted-partner">
+      <div class="content-wrapper">
+        <div class="text-content">
+          <h2 class="main-heading">Your Trusted Partner in Medical Innovation</h2>
+          <p class="description">With a skilled technical team and extensive sales network, we proudly support healthcare facilities nationwide by equipping hospitals with cutting-edge medical technology since 1992.</p>
+        </div>
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/2aa4584b592d7afa69e94588cac6e517da1015b2d2aa89f49ed0bd85a5215118?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="partner-image" alt="Medical innovation technology representation" />
+      </div>
+    </section>

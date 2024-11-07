@@ -2,76 +2,75 @@
     .partner-section {
         display: flex;
         align-items: center;
-        gap: 40px 92px;
+       
         overflow: hidden;
-        font-family: Outfit, sans-serif;
+        font-family: Outfit,sans-serif;
         color: #000;
         font-weight: 400;
         justify-content: start;
         flex-wrap: wrap;
-        padding: 0 186px;
+        padding: 0 12.5vw;
     }
     
-    @media (max-width: 991px) {
-        .partner-section {
-            padding: 0 20px;
-        }
-    }
+
     
-    .content-wrapper {
+    .content-wrapper-partner {
         align-self: stretch;
         display: flex;
-        min-width: 240px;
+      
+        max-width: 50%;
         flex-direction: column;
         justify-content: center;
-        width: 530px;
+       
         margin: auto 0;
     }
     
     @media (max-width: 991px) {
-        .content-wrapper {
+        .content-wrapper-partner {
             max-width: 100%;
         }
     }
     
-    .main-heading {
-        font-size: 45px;
+    .main-heading-partner {
+        font-size: 3vw;
         font-weight: 600;
-        line-height: 50px;
+        line-height: 3vw;
+    }
+    .main-heading-partner{
+        margin-block-end: 10px;
     }
     
     @media (max-width: 991px) {
-        .main-heading {
-            max-width: 100%;
+        .main-heading-partner {
+            /* max-width: 100%; */
             font-size: 40px;
             line-height: 49px;
         }
     }
     
-    .sub-heading {
-        font-size: 22px;
-        line-height: 30px;
-        margin-top: 26px;
+    .sub-heading-partner {
+        font-size: 1.5vw;
+        line-height: 2vw;
+        margin-top: 5px;
     }
     
     @media (max-width: 991px) {
-        .sub-heading {
-            max-width: 100%;
+        .sub-heading-partner {
+            /* max-width: 100%; */
+            font-size:23px;
+            line-height: 25px;
         }
     }
     
-    .cta-wrapper {
+    .cta-wrapper-partner {
         display: flex;
-        margin-top: 26px;
-        width: 164px;
-        max-width: 100%;
-        flex-direction: column;
-        font-size: 20px;
-        text-align: center;
-    }
+        margin-top: 25px;
+        width: 11.5vw;
     
-    .cta-button {
-        border-radius: 40px;
+        flex-direction: column;
+        font-size: 1.5vw;
+        text-align: center;
+        border-radius: 20px;
         padding: 11px 16px;
         border: 2px solid #81B3E2;
         background: none;
@@ -79,16 +78,19 @@
     }
     
     @media (max-width: 991px) {
-        .cta-button {
-            padding: 11px 20px;
+        .cta-wrapper-partner {
+           width: 200px;
+           font-size: 25px;
+           padding: 11px 16px;
         }
     }
     
     .partner-image {
-        aspect-ratio: 0.74;
+      
         object-fit: contain;
         object-position: center;
-        width: 449px;
+   
+       width: 33vw;
         align-self: stretch;
         min-width: 240px;
         margin: auto 0;
@@ -96,36 +98,26 @@
     
     @media (max-width: 991px) {
         .partner-image {
-            max-width: 100%;
+            width: 80%;
+            align-items: center;
         }
     }
     
-    .visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
-    }
     </style>
     
     <section class="partner-section">
-        <div class="content-wrapper">
-            <h2 class="main-heading">
+        <div class="content-wrapper-partner">
+            <h2 class="main-heading-partner">
                 <span>Partner with Indonesia's</span>
                 <br />
                 <span>Leading Medical Supplier</span>
             </h2>
-            <p class="sub-heading">
+            <p class="sub-heading-partner">
                 Elevate patient care with our advanced hospital equipment. Connect with us today!
             </p>
-            <div class="cta-wrapper">
-                <button class="cta-button" tabindex="0">Contact Us</button>
+            <div class="cta-wrapper-partner">
+                <a hreef="#">Contact Us</a>
             </div>
         </div>
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/5b9d30a1bb3872ae8a88e70fcca57579bae06618841a0d9b909ea8dec44700da?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="partner-image" alt="Medical equipment showcasing advanced hospital technology" />
+        <img loading="lazy" src="assets/nurse1.png" class="partner-image" alt="Medical equipment showcasing advanced hospital technology" />
     </section>

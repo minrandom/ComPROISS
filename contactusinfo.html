@@ -1,0 +1,117 @@
+<style>
+    .contact-section {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .contact-container {
+      background-color: #fff;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 104px 70px;
+    }
+    
+    .contact-wrapper {
+      width: 694px;
+      max-width: 100%;
+    }
+    
+    .contact-row {
+      display: flex;
+      gap: 20px;
+    }
+    
+    .contact-column {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+    }
+    
+    .contact-info {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      color: #000;
+      font: 400 20px Outfit, sans-serif;
+    }
+    
+    .contact-title {
+      font-size: 25px;
+      font-weight: 600;
+    }
+    
+    .contact-details {
+      margin-top: 12px;
+    }
+    
+    .contact-bold {
+      font-weight: 600;
+    }
+    
+    .contact-email {
+      font-weight: 500;
+      margin-top: 12px;
+    }
+    
+    @media (max-width: 991px) {
+      .contact-container {
+        max-width: 100%;
+        padding: 100px 20px;
+      }
+    
+      .contact-wrapper {
+        margin-bottom: 10px;
+      }
+    
+      .contact-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+    
+      .contact-column {
+        width: 100%;
+      }
+    
+      .contact-info {
+        margin-top: 40px;
+      }
+    }
+    </style>
+    
+    <section class="contact-section">
+      <div class="contact-container">
+        <div class="contact-wrapper">
+          <div class="contact-row">
+            <div class="contact-column">
+              <div class="contact-info">
+                <h2 class="contact-title">Main Office</h2>
+                <address class="contact-details">
+                  Jln. Mampang Prapatan Raya No. 1<br>
+                  Mampang Prapatan<br>
+                  Jakarta Selatan, Indonesia
+                </address>
+                <p class="contact-details">
+                  <span class="contact-bold">Telp:</span> +62 21 79 18 03 45<br>
+                  <span class="contact-bold">Fax:</span> +62 21 79 18 03 44
+                </p>
+                <a href="mailto:enquiries@indosopha.com" class="contact-email">enquiries@indosopha.com</a>
+              </div>
+            </div>
+            <div class="contact-column">
+              <div class="contact-info">
+                <h2 class="contact-title">Technical Support</h2>
+                <p class="contact-details">
+                  <span class="contact-bold">Toll Free:</span> +62 800 1123 444<br>
+                  <span class="contact-bold">SMS:</span> +62 8 111 23 444
+                </p>
+                <a href="mailto:technical-support@indosopha.com" class="contact-email">technical-support@indosopha.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

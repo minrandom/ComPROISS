@@ -5,13 +5,14 @@
       flex-direction: column;
       justify-content: flex-start;
       width: 100vw;
+      
       margin: 0 auto -5px calc(50% - 50vw);
       padding: 46px 162px 64px 144px;
     }
     
     @media (max-width: 991px) {
       .footer {
-        padding: 0 20px 100px;
+        padding: 20 20px 100px;
       }
     }
     
@@ -101,12 +102,27 @@
       color: #989da2;
       font-weight: 300;
       justify-content: flex-start;
+      list-style-type:none;
+      padding-left: 0;
+      position: relative;
     }
+
+
     
     .product-item {
       width: 100%;
       margin-top: 10px;
     }
+
+    .product-item a{
+      text-decoration: none;
+      color: inherit;
+    }
+
+   
+
+   
+  
     
     @media (max-width: 991px) {
       .product-item {
@@ -213,6 +229,7 @@
       justify-content: flex-start;
       flex-wrap: wrap;
       font: 300 18px Outfit, sans-serif;
+
     }
     
     @media (max-width: 991px) {
@@ -241,6 +258,12 @@
       flex-grow: 1;
       width: 857px;
       margin: auto 0;
+     
+    }
+
+    .copyright-links a{
+      text-decoration: none;
+      color: inherit;
     }
     
     @media (max-width: 991px) {
@@ -249,17 +272,6 @@
       }
     }
     
-    .visually-hidden {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
-    }
     </style>
     
     <footer class="footer">
@@ -271,20 +283,20 @@
           </div>
           <a href="#" class="nav-link">About Us</a>
           <div class="products-column">
-            <h3 class="nav-link">Products & Solutions</h3>
+            <a href="#" class="nav-link">Products & Solutions</a>
             <ul class="product-list">
-              <li class="product-item">Critical Care</li>
-              <li class="product-item">Operating Rooms</li>
-              <li class="product-item">Surgery</li>
-              <li class="product-item">Cardiology</li>
-              <li class="product-item">Radiation Oncology</li>
-              <li class="product-item">Urology</li>
-              <li class="product-item">Anaesthesia</li>
+              <li class="product-item"><a href="#">Critical Care</a></li>
+              <li class="product-item"><a href="#">Operating Rooms</a></li>
+              <li class="product-item"><a href="#">Surgery</a></li>
+              <li class="product-item"><a href="#">Cardiology</a></li>
+              <li class="product-item"><a href="#">Radiation Oncology</a></li>
+              <li class="product-item"><a href="#">Urology</a></li>
+              <li class="product-item"><a href="#">Anaesthesia</a></li>
             </ul>
           </div>
           <a href="#" class="nav-link">News & Events</a>
           <div class="contact-column">
-            <h3 class="nav-link">Contact Us</h3>
+            <a href="#" class="nav-link">Contact Us</a>
             <div class="contact-info">
               <h4 class="contact-title">Main Office</h4>
               <address class="contact-detail">
@@ -293,8 +305,8 @@
                 Jakarta, Indonesia
               </address>
               <p class="contact-detail">
-                Telp: <a href="tel:+622179180345">+62 21 79 18 03 45</a><br>
-                Fax: <a href="tel:+622179180344">+62 21 79 18 03 44</a>
+                Telp: <a href="tel:+622179180345">+6221 7918 0345</a><br>
+                Fax: <a href="tel:+622179180344">+6221 7918 0344</a>
               </p>
               <a href="mailto:enquiries@indosopha.com" class="contact-email">enquiries@indosopha.com</a>
             </div>

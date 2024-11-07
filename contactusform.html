@@ -1,0 +1,128 @@
+<style>
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      color: #989da2;
+      font: 400 18px Outfit, sans-serif;
+    }
+    
+    .contact-form-container {
+      background-color: #f0f0f0;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      padding: 168px 80px 67px;
+    }
+    
+    .contact-form-wrapper {
+      display: flex;
+      width: 100%;
+      max-width: 100%;
+      flex-direction: column;
+    }
+    
+    .contact-form-header {
+      display: flex;
+      width: 100%;
+      gap: 23px;
+      line-height: 2;
+      flex-wrap: wrap;
+    }
+    
+    .contact-form-input {
+      align-self: stretch;
+      background-color: #fff;
+      box-shadow: 1px 6px 15px rgba(0, 0, 0, 0.25);
+      min-height: 52px;
+      flex-grow: 1;
+      flex-basis: auto;
+      padding: 11px 18px;
+    }
+    
+    .contact-form-subject {
+      align-self: stretch;
+      background-color: #fff;
+      box-shadow: 1px 6px 15px rgba(0, 0, 0, 0.25);
+      margin-top: 30px;
+      min-height: 52px;
+      line-height: 2;
+      padding: 11px 18px;
+    }
+    
+    .contact-form-message {
+      background-color: #fff;
+      box-shadow: 1px 6px 15px rgba(0, 0, 0, 0.25);
+      margin-top: 30px;
+      min-height: 397px;
+      line-height: 2;
+      padding: 11px 18px 356px;
+    }
+    
+    .contact-form-submit {
+      border-radius: 40px;
+      align-self: center;
+      margin-top: 42px;
+      width: 164px;
+      max-width: 100%;
+      font-size: 20px;
+      color: #000;
+      text-align: center;
+      padding: 11px 51px;
+      border: 2px solid #81b3e2;
+      background: none;
+      cursor: pointer;
+    }
+    
+    @media (max-width: 991px) {
+      .contact-form-container {
+        max-width: 100%;
+        padding: 100px 20px 0;
+      }
+    
+      .contact-form-header {
+        max-width: 100%;
+      }
+    
+      .contact-form-input {
+        white-space: normal;
+      }
+    
+      .contact-form-subject {
+        white-space: normal;
+      }
+    
+      .contact-form-message {
+        padding-bottom: 100px;
+        white-space: normal;
+      }
+    
+      .contact-form-submit {
+        margin-top: 40px;
+        white-space: normal;
+        padding: 11px 20px;
+      }
+    }
+    </style>
+    
+    <section class="contact-form">
+      <div class="contact-form-container">
+        <form class="contact-form-wrapper">
+          <div class="contact-form-header">
+            <label for="fullName" class="visually-hidden">Full Name</label>
+            <input type="text" id="fullName" name="fullName" class="contact-form-input" placeholder="Full Name" aria-label="Full Name">
+            
+            <label for="email" class="visually-hidden">Email</label>
+            <input type="email" id="email" name="email" class="contact-form-input" placeholder="Email" aria-label="Email">
+          </div>
+          
+          <label for="subject" class="visually-hidden">Subject</label>
+          <input type="text" id="subject" name="subject" class="contact-form-subject" placeholder="Subject" aria-label="Subject">
+          
+          <label for="message" class="visually-hidden">Message</label>
+          <textarea id="message" name="message" class="contact-form-message" placeholder="Message" aria-label="Message"></textarea>
+          
+          <button type="submit" class="contact-form-submit">Submit</button>
+        </form>
+      </div>
+    </section>

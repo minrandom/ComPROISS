@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Brand Grid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .search-options {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .search-options p {
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        .search-options label {
+            margin-right: 15px;
+            font-size: 14px;
+        }
+
+        .category {
+            color: grey;
+        }
+
+        .brand {
+            color: #6EA8FF; /* Light blue */
+        }
+
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+        }
+
+        .brand-item {
+            border: 1px solid #E1E1E1;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80px;
+        }
+
+        .brand-item img {
+            max-height: 60px;
+            max-width: 100%;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+            .brand-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .brand-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .brand-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 400px) {
+            .brand-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="search-options">
+            <p>Search by:</p>
+            <label><input type="radio" name="search" checked> <span class="category">Category</span></label>
+            <label><input type="radio" name="search"> <span class="brand">Brand</span></label>
+        </div>
+        <div class="brand-grid">
+            <div class="brand-item"><img src="img/getinge-logo.png" alt="Getinge"></div>
+            <div class="brand-item"><img src="img/delacroix-chevalier-logo.png" alt="Delacroix Chevalier"></div>
+            <div class="brand-item"><img src="img/arcomed-logo.png" alt="Arcomed"></div>
+            <div class="brand-item"><img src="img/lamidey-noury-logo.png" alt="Lamidey Noury"></div>
+            <div class="brand-item"><img src="img/dex-surgical-logo.png" alt="Dex Surgical"></div>
+            <div class="brand-item"><img src="img/therma-solutions-logo.png" alt="Therma Solutions"></div>
+            <div class="brand-item"><img src="img/lap-logo.png" alt="LAP"></div>
+            <div class="brand-item"><img src="img/raysearch-laboratories-logo.png" alt="RaySearch Laboratories"></div>
+            <div class="brand-item"><img src="img/arplay-medical-logo.png" alt="Arplay Medical"></div>
+            <div class="brand-item"><img src="img/orfit-logo.png" alt="Orfit"></div>
+            <div class="brand-item"><img src="img/edap-tms-logo.png" alt="Edap TMS"></div>
+            <div class="brand-item"><img src="img/ge-healthcare-logo.png" alt="GE Healthcare"></div>
+            <div class="brand-item"><img src="img/medap-logo.png" alt="Medap"></div>
+            <div class="brand-item"><img src="img/landanger-logo.png" alt="Landanger"></div>
+            <div class="brand-item"><img src="img/fairmont-medical-logo.png" alt="Fairmont Medical"></div>
+            <div class="brand-item"><img src="img/surgmedia-logo.png" alt="SurgMedia"></div>
+            <div class="brand-item"><img src="img/lsb-logo.png" alt="LSB"></div>
+            <div class="brand-item"><img src="img/a2i-logo.png" alt="A2i"></div>
+            <div class="brand-item"><img src="img/mits-logo.png" alt="Mits"></div>
+        </div>
+    </div>
+</body>
+</html>

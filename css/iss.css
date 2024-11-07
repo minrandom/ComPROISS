@@ -387,9 +387,26 @@ body {
             border: 1px solid #ccc; /* Optional border */
             z-index: 11; /* Above the overlay */
             padding: 20px; /* Padding for content */
+        
             border-radius: 8px; /* Optional rounded corners */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
         }
+
+        .dropdown-menu a:hover {
+          background-color: #007BFF; /* Change color on hover */
+      }
+
+        .close-menu-button {
+          background-color: #ff4d4d; /* Red background */
+          color: white;
+          border: none;
+          padding: 8px 12px;
+          cursor: pointer;
+          border-radius: 4px; /* Rounded corners */
+          margin-bottom: 10px; /* Space below the button */
+          float:right;
+        }
+      
 
   .nav-item-home {
     width: 6vw;

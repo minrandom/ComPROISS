@@ -31,11 +31,12 @@
   </div>
 
   <div class="dropdown-menu" id="dropdownMenu">
-    <a href="#" class="nav-item nav-item-home">Home</a></br>
-    <a href="#" class="nav-item nav-item-about">About Us</a></br>
-    <a href="#" class="nav-item nav-item-products">Products & Solutions</a></br>
-    <a href="#" class="nav-item nav-item-news">News & Events</a></br>
-    <a href="#" class="nav-item nav-item-contact">Contact Us</a></br>
+    <button class="close-menu-button" onclick="closeDropdown()">X</button>
+    <a href="#" class="nav-item nav-item-home">Home</a></br></br>
+    <a href="#" class="nav-item nav-item-about">About Us</a></br></br>
+    <a href="#" class="nav-item nav-item-products">Products & Solutions</a></br></br>
+    <a href="#" class="nav-item nav-item-news">News & Events</a></br></br>
+    <a href="#" class="nav-item nav-item-contact">Contact Us</a>
 </div>
 
 </nav>
@@ -280,9 +281,7 @@
             pageDots: false, // Hide page dots
             prevNextButtons: true, // Hide default buttons
         });
-    </script>
 
-<script>
   function toggleDropdown() {
       var dropdownMenu = document.getElementById("dropdownMenu");
       if (dropdownMenu.style.display === "block") {
@@ -290,6 +289,15 @@
       } else {
           dropdownMenu.style.display = "block"; // Show the menu
       }
+    
   }
+
+  function closeDropdown() {
+        var dropdownMenu = document.getElementById("dropdownMenu");
+        dropdownMenu.style.display = "none"; // Hide the menu when close button is clicked
+    }
+
+
+
 </script>
 </body>

@@ -279,12 +279,29 @@ body {
     flex-wrap: wrap;
   }
 
+  .nav-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color from parent */
+    padding: 2px 2px; /* Add padding for clickable area */
+    border-radius: 30px; /* Rounded corners for the hover effect */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.nav-links a:hover {
+    background-color: #D6d4d4; /* Blue background on hover */
+  /* Change text color to white on hover for contrast */
+}
+
+
   .nav-item {
     text-align: center;
     text-decoration: none;
     color: inherit;
-    font-size: 30px; /* Set font size for nav items */
+    font-size: 30px; 
+    transition: background-color 0.5s ease;/* Set font size for nav items */
   }
+
+
 
   @media (min-width: 2200px) {
     .nav-item {
@@ -392,9 +409,19 @@ body {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
         }
 
-        .dropdown-menu a:hover {
-          background-color: #007BFF; /* Change color on hover */
+        .dropdown-menu a {
+          text-decoration: none; /* Remove underline from links */
+          color: inherit; /* Inherit color from parent */
+          padding: 2px 2px; /* Add padding for clickable area */
+          border-radius: 30px; /* Rounded corners for the hover effect */
+          transition: background-color 0.3s ease; /* Smooth transition for hover */
       }
+
+        .dropdown-menu a:hover {
+          background-color: #D6d4d4; /* Change color on hover */
+      }
+
+   
 
         .close-menu-button {
           background-color: #ff4d4d; /* Red background */

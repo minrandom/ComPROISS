@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+<link href='css/iss.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+</head>
+<body>
+<!-- Nav Section-->
+<nav class="nav-bar" aria-label="Main navigation">
+  <div class="nav-content">
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/13147525caf671a1280c0fcf2a092cfb029f6b108668e7bd9621bcbd26068251?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="logo" alt="Company logo" />
+    <a href="javascript:void(0);" class="drawer-item drawer" onclick="toggleDropdown()">
+      <i class="fa fa-bars"></i> <span class="menutext">Menu</span>
+    </a>
+  
+  
+  </div>
+  
+  <div class="nav-links">
+    <a href="index.html" class="nav-item nav-item-home">Home</a>
+    <a href="aboutus.html" class="nav-item nav-item-about">About Us</a>
+    <a href="#" class="nav-item nav-item-products">Products & Solutions</a>
+    <a href="#" class="nav-item nav-item-news">News & Events</a>
+    <a href="#" class="nav-item nav-item-contact">Contact Us</a>
+    <!-- <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/9abbd582b28d9386334ff61028001786637f4ca51c30ea602c4b35665847405e?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="user-icon" alt="User account icon" /> -->
+  </div>
+
+  <div class="dropdown-menu" id="dropdownMenu">
+    <button class="close-menu-button" onclick="closeDropdown()">X</button>
+    <a href="index.html" class="nav-item nav-item-home">Home</a></br></br>
+    <a href="aboutus.html" class="nav-item nav-item-about">About Us</a></br></br>
+    <a href="#" class="nav-item nav-item-products">Products & Solutions</a></br></br>
+    <a href="#" class="nav-item nav-item-news">News & Events</a></br></br>
+    <a href="#" class="nav-item nav-item-contact">Contact Us</a>
+</div>
+
+</nav>
+
+<!-- hero Sectton-->
+<section class="hero-section">
+  <div class="hero-image-wrapper">
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/ad890c89d8ab36e3cab7103402ac5f492efd29575ca59b59eff9feb20383f444?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="" class="hero-image" />
+  </div>
+  <div class="hero-content">
+    <div class="hero-title">About Us</div>
+    <div class="hero-description">PT. Indosopha Sakti , a leading medical equipment distribution company in Indonesia since 1992</div>
+  </div>
+</section>
+
+<section class="about-us-fact">
+  <p class="about-description-fact">With decades of expertise, we deliver advanced medical equipment and solutions, ensuring that healthcare facilities in Indonesia can provide the highest quality patient care.</p>
+  <div class="stats-container">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/a8df9dac41e4ecbc0326eda92d1ea3ff13dd05b70348622ea4bb1a5da29c7a97?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Hospital icon" class="stat-icon" />
+        <p class="stat-number">519+</p>
+        <p class="stat-description">Hospitals Equipped<br />Across Indonesia</p>
+      </div>
+      <div class="stat-card">
+        <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/e1ea0362f9122e0bb698ea6929002db6beebb00484b137316eda482895cd818a?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Partnership icon" class="stat-icon" />
+        <p class="stat-number">19+</p>
+        <p class="stat-description">Trusted International<br />Partners</p>
+      </div>
+      <div class="stat-card">
+        <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/a4972fdd4b5d8b6743de4f26f988658a5467dd6938f2e93c088aa4caea9c3490?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Employee icon" class="stat-icon" />
+        <p class="stat-number">170+</p>
+        <p class="stat-description">Highly Skilled<br />Employees</p>
+      </div>
+      <div class="stat-card">
+        <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/c21ebb9ac1ef401e244b79c6cd467f73511392377e477f6c4d1eb5c52293c95e?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Office building icon" class="stat-icon" />
+        <p class="stat-number">19+</p>
+        <p class="stat-description">Offices Across<br />Indonesia</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="trusted-partner">
+  <div class="content-wrapper-trustpart">
+    <div class="text-content-truspart">
+      <h2 class="main-heading-trustpart">Your Trusted Partner in Medical Innovation</h2>
+      <p class="description-trustpart">With a skilled technical team and extensive sales network, we proudly support healthcare facilities nationwide by equipping hospitals with cutting-edge medical technology since 1992.</p>
+    </div>
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/2aa4584b592d7afa69e94588cac6e517da1015b2d2aa89f49ed0bd85a5215118?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="trust-partner-image" alt="Medical innovation technology representation" />
+  </div>
+</section>
+
+<section class="news-events-map">
+  <div class="locations-container">
+    <div class="content-wrapper-map">
+      <h2 class="locations-title">Our Locations</h2>
+      <img class="locations-image" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/29e0451299af50bff35a7a609a6e3363e4d0bb9194337e36e4595ffd58f4656a?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Map showing our locations" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="partners-section">
+  <div class="partners-container">
+    <div class="partners-content">
+      <header class="partners-header">
+        <h2 class="partners-title">Our Partners</h2>
+        <p class="partners-description">We partner with renowned international corporations to deliver a curated selection of medical equipment and services, ensuring our clients receive optimal solutions for their healthcare needs.</p>
+      </header>
+      <div class="partners-logo-grid">
+        <div class="partners-logo-row">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/27c2d805262f24177e672c4630463bc78148f6c29f2ccf780cb8d7a6607d568d?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="partners-logo-img partners-logo-img-1" alt="Partner logo 1" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/a4cb4388efef00c0933edbb14cd34671b8c70dd6cf58d213bebf84fe2fac416a?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="partners-logo-img partners-logo-img-2" alt="Partner logo 2" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/e5847bef8892afe5304ce73eb3c59cdd7a4ca0a9276d45759147eeb6e08d29c1?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="partners-logo-img partners-logo-img-3" alt="Partner logo 3" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/45a224e3e0b0a012f852cdeb04e1727a1632ecce5cb222e53e9d92ba7be21302?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="partners-logo-img partners-logo-img-4" alt="Partner logo 4" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/4bca7b4988551461e2abc1a4acd6ff5fead6bc27ab5a6c7203ebbc254ba17646?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="partners-logo-img partners-logo-img-5" alt="Partner logo 5" />
+        </div>
+        <div class="partners-logo-row">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/eac3557863470b286b10f171a5da1dfb00ddce13bc928cfd9f78781742b52c95?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="partners-logo-img partners-logo-img-6" alt="Partner logo 6" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/6ab7ae6fdac3cb95ff437cd6194af19e1819c40b78bc2a21940f1a78107c9c43?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="partners-logo-img partners-logo-img-7" alt="Partner logo 7" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/ce8aa8fb58aeb1b58ebbd0dd0f458fee7133f8d3fdee613ece22bd445247d01f?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="partners-logo-img partners-logo-img-8" alt="Partner logo 8" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/72c3b2c47b9c75ee7cfcee8d9b1c685385f82b27a2634f7bb166878a24a3b524?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="partners-logo-img partners-logo-img-9" alt="Partner logo 9" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/892cdc6aef8c2a7719a1e6936fcb5c92fe0ca830f90719452bb79684c16be9aa?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="partners-logo-img partners-logo-img-10" alt="Partner logo 10" />
+        </div>
+        <div class="partners-logo-row">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/4eb237f2006ec87ff2d015173920d6e6169c1d33afc9d122421e01218667ee21?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="partners-logo-img partners-logo-img-11" alt="Partner logo 11" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/7dc4440cc5e415ae59128a72eee33eac318837005a3eeecf0dd62e0d6d234e71?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="partners-logo-img partners-logo-img-12" alt="Partner logo 12" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/51bd6f90d4531937cdb7a5547131b5cc95ef985daa2e2121b5d789d759c55c09?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="partners-logo-img partners-logo-img-13" alt="Partner logo 13" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/997a37a16da211aa6bc6018cda9c1c4be718de296dc9ab1ae410c969e337e72a?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="partners-logo-img partners-logo-img-14" alt="Partner logo 14" />
+        </div>
+        <div class="partners-logo-row">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/be58251ee3228de5b1196ae09769c2f5cbc2857c184d7da7241861702433b4cf?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="partners-logo-img partners-logo-img-15" alt="Partner logo 15" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/e68fcad43ce1e653f3a792b366a4e4e4bfb0aa0836950a15a6c31728e08d9995?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="partners-logo-img partners-logo-img-16" alt="Partner logo 16" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/afc738cc6e5847294aae5c63a5f9e429d13899ad296ad944a5ce663f5395d178?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="partners-logo-img partners-logo-img-17" alt="Partner logo 17" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/2c538e0f464533ff006ca843036ac4b447749f98247a1b6139fdee64ca88021a?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="partners-logo-img partners-logo-img-18" alt="Partner logo 18" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/6d86fde2c54fc7674e9927f21bb302d78d15b89d904fde502080ec797a418a1a?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="partners-logo-img partners-logo-img-19" alt="Partner logo 19" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="recent-projects">
+  <div class="projects-container">
+    <div class="content-wrapper-proj">
+      <header class="header-content-proj">
+        <h2 class="section-title-proj">What We've Recently Done</h2>
+        <p class="section-description-proj">We have successfully completed impactful projects involving hospital renovations and supplied medical equipment, with several projects currently underway.</p>
+      </header>
+      <div class="projects-grid">
+        <div class="projects-row">
+          <article class="project-column">
+            <div class="project-card">
+              <div class="card-content-proj">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/6293762610946a4a89ff8c7d40268cb242a4f74172ab91d849b79320ccc0e59c?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="project-image" alt="Ongoing renovations project" />
+                <div class="project-details">
+                  <header class="project-header">
+                    <p class="project-status">Ongoing Renovations</p>
+                    <h3 class="project-name">RST Soejono Magelang<br />RSAD Pelamonia Makassar<br />RSAD Dustira Cimahi<br />RSAD Marthen Indey Jayapura</h3>
+                  </header>
+                  <p class="project-info">
+                    <span class="visually-hidden">Project details:</span>
+                    <strong>Client:</strong> Ministry of Defense RI<br />
+                    <strong>Start Date:</strong> January 2024
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="project-column">
+            <div class="project-card">
+              <div class="card-content-proj">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/60e943daeed3053d97b8c3bb7c3573dd38be48f91b558e31d18d6a620345f724?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="project-image" alt="Renovation project in Denpasar, Bali" />
+                <div class="project-details">
+                  <header class="project-header">
+                    <p class="project-status">Renovation</p>
+                    <h3 class="project-name">RSAD Udayana Denpasar, Bali</h3>
+                  </header>
+                  <p class="project-info">
+                    <span class="visually-hidden">Project details:</span>
+                    <strong>Client:</strong> Ministry of Defense RI<br />
+                    <strong>Start Date:</strong> January 2022<br />
+                    <strong>Completion Date:</strong> Nov 2023
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="project-column">
+            <div class="project-card">
+              <div class="card-content-proj">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/c40fd5530a449b44747a89c91afae978f1a475a2c66188a3fe669006e59bf45d?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="project-image" alt="Renovation project in Medan" />
+                <div class="project-details">
+                  <header class="project-header">
+                    <p class="project-status">Renovation</p>
+                    <h3 class="project-name">RSAD Putri Hijau Medan</h3>
+                  </header>
+                  <p class="project-info">
+                    <span class="visually-hidden">Project details:</span>
+                    <strong>Client:</strong> Ministry of Defense RI<br />
+                    <strong>Start Date:</strong> January 2021<br />
+                    <strong>Completion Date:</strong> Nov 2022
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="board-section">
+  <div class="board-container">
+      <div class="board-content">
+          <header class="board-header">
+              <h2 class="board-title">Meet Our Board of Directors</h2>
+              <p class="board-description">Get to know the visionary leaders driving Indosopha's mission. Our Board of Directors brings together diverse expertise and leadership, guiding Indosopha's strategic growth and dedication to quality.</p>
+          </header>
+          
+          <div class="director-container">
+              <article class="director-info">
+                  <h3 class="director-role">President Director</h3>
+                  <h4 class="director-name">Frederic Guiraud</h4>
+                  <p class="director-bio">With a skilled technical team and extensive sales network, we proudly support healthcare facilities nationwide by equipping hospitals with cutting-edge medical technology since 1992.</p>
+              </article>
+              <div class="director-image" role="img" aria-label="Photo of Frederic Guiraud"></div>
+          </div>
+          
+          <div class="director-container">
+              <div class="director-image" role="img" aria-label="Photo of Amalia Amara"></div>
+              <article class="director-info">
+                  <h3 class="director-role">Project Director</h3>
+                  <h4 class="director-name">Amalia Amara</h4>
+                  <p class="director-bio">With a skilled technical team and extensive sales network, we proudly support healthcare facilities nationwide by equipping hospitals with cutting-edge medical technology since 1992.</p>
+              </article>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <nav class="footer-links">
+      <div class="nav-column">
+          <a href="index.html" class="nav-item nav-item-home">Home</a>
+        <a href="#" class="nav-link-secondary">Careers</a>
+      </div>
+      <a href="aboutus.html" class="nav-item nav-item-about">About Us</a></div>
+      
+    
+    
+
+
+      <div class="products-column">
+        <a href="#" class="nav-link">Products & Solutions</a>
+        <ul class="product-list">
+          <li class="product-item"><a href="#">Critical Care</a></li>
+          <li class="product-item"><a href="#">Operating Rooms</a></li>
+          <li class="product-item"><a href="#">Surgery</a></li>
+          <li class="product-item"><a href="#">Cardiology</a></li>
+          <li class="product-item"><a href="#">Radiation Oncology</a></li>
+          <li class="product-item"><a href="#">Urology</a></li>
+          <li class="product-item"><a href="#">Anaesthesia</a></li>
+        </ul>
+      </div>
+      <div class="nav-column"><a href="#" class="nav-link">News & Events</a></div>
+      <div class="contact-column">
+        <a href="#" class="nav-link">Contact Us</a>
+        <div class="contact-info">
+          <h4 class="contact-title">Main Office</h4>
+          <address class="contact-detail">
+            Jln. Mampang Prapatan Raya No. 1<br>
+            Mampang Prapatan<br>
+            Jakarta, Indonesia
+          </address>
+          <p class="contact-detail">
+            Telp: <a href="tel:+622179180345">+6221 7918 0345</a><br>
+            Fax: <a href="tel:+622179180344">+6221 7918 0344</a>
+          </p>
+          <a href="mailto:enquiries@indosopha.com" class="contact-email">enquiries@indosopha.com</a>
+        </div>
+      </div>
+    </nav>
+    <div class="footer-bottom">
+      <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/aadeeb5caf8c39e7733c447c06725cb9da43615fd617cdd0058b52d470637d8e?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Company Logo" class="footer-logo">
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook">
+          <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/7f618d4794dc1d00e28da682f6798fce8009ae0a21c0dcfa9cd586a041fa0a90?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="" class="social-icon">
+        </a>
+        <a href="#" aria-label="Twitter">
+          <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/3af82549a778ec023864328a9b27d054e1da645df1fe01d63a636c6a2542baaa?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="" class="social-icon">
+        </a>
+      </div>
+      <hr class="footer-divider">
+    </div>
+    <div class="footer-copyright">
+      <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/9abbd582b28d9386334ff61028001786637f4ca51c30ea602c4b35665847405e?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Copyright Symbol" class="copyright-logo">
+      <div class="copyright-links">
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+        const flkty = new Flickity('.carousel', {
+            cellAlign: 'left', // Align cells to the left
+            contain: true, // Contain cells within the carousel
+            freeScroll:true,
+            wrapAround: true, // Infinite looping
+            pageDots: false, // Hide page dots
+            prevNextButtons: true, // Hide default buttons
+        });
+
+  function toggleDropdown() {
+      var dropdownMenu = document.getElementById("dropdownMenu");
+      if (dropdownMenu.style.display === "block") {
+          dropdownMenu.style.display = "none"; // Hide the menu
+      } else {
+          dropdownMenu.style.display = "block"; // Show the menu
+      }
+    
+  }
+
+  function closeDropdown() {
+        var dropdownMenu = document.getElementById("dropdownMenu");
+        dropdownMenu.style.display = "none"; // Hide the menu when close button is clicked
+    }
+
+
+
+</script>
+</body>

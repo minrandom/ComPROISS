@@ -1,24 +1,40 @@
 <style>
-    .about-us { display: flex; flex-direction: column; }
-    .about-description { align-self: center; width: 100%; max-width: 895px; color: #000; text-align: center; font: 600 30px/35px Outfit, sans-serif; }
+    .about-us-fact { display: flex; flex-direction: column; padding: 4vw 16vw;}
+    @media (max-width:1350px) {
+      .about-us-fact {padding: 4vw 12vw;}
+      
+    }
+    .about-description-fact { align-self: center; width: 100%; max-width: 895px; color: #000; text-align: center; font: 600 30px/35px Outfit, sans-serif; }
     .stats-container { margin-top: 60px; width: 100%; }
     .stats-grid { gap: 20px; display: flex; }
     .stat-card { border-radius: 40px; background-color: #f0f0f0; display: flex; flex-grow: 1; flex-direction: column; font-family: Outfit, sans-serif; justify-content: start; width: 100%; padding: 28px 31px; }
+    .stat-card p {
+      margin-block-start: 5px;
+      margin-block-end: 5px;
+    }
     .stat-icon { aspect-ratio: 1; object-fit: contain; object-position: center; width: 40px; }
     .stat-number { color: #000; font-size: 45px; font-weight: 600; line-height: 1; margin-top: 10px; }
-    .stat-description { color: #989da2; font-size: 20px; font-weight: 500; line-height: 25px; margin-top: 10px; }
+    .stat-description { color: #515253; font-size: 20px; font-weight: 500; line-height: 25px; margin-top: 10px; }
     
     @media (max-width: 991px) {
-      .about-description { max-width: 100%; }
+      .about-description-fact { max-width: 100%; }
       .stats-container { max-width: 100%; margin-top: 40px; }
       .stats-grid { flex-direction: column; align-items: stretch; gap: 0; }
       .stat-card { margin-top: 15px; padding: 28px 20px; }
-      .stat-number { font-size: 40px; }
+      .stat-number { font-size: 50px; }
+      .stat-icon {width:60px}
+      .stat-description {font-size: 25px;}
     }
+    
+
+
+
+
+
     </style>
     
-    <section class="about-us">
-      <p class="about-description">With decades of expertise, we deliver advanced medical equipment and solutions, ensuring that healthcare facilities in Indonesia can provide the highest quality patient care.</p>
+    <section class="about-us-fact">
+      <p class="about-description-fact">With decades of expertise, we deliver advanced medical equipment and solutions, ensuring that healthcare facilities in Indonesia can provide the highest quality patient care.</p>
       <div class="stats-container">
         <div class="stats-grid">
           <div class="stat-card">

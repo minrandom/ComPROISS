@@ -26,8 +26,8 @@
     
         .board-container {
             display: flex;
-            width: 100%;
-            max-width: 100vw;
+            width: 100vw;
+            max-width: 100%;
             flex-direction: column;
             align-items: center;
             padding: 33px 20px 108px; /* Adjusted padding for better consistency */
@@ -85,6 +85,12 @@
             flex-direction: column;
             box-sizing: border-box;
         }
+
+        @media (min-width:1600px) {
+            .board-content {
+            max-width: 60vw;
+            }
+        }
     
         .board-header {
             align-self: center;
@@ -101,6 +107,8 @@
             font-size: 45px;
             font-weight: 700;
             line-height: 1;
+            margin-block-start: 20px;
+            margin-block-end: 10px;
         }
         
         @media (max-width: 991px) {
@@ -151,7 +159,7 @@
             width: 100%;
             max-width: 525px;
             box-sizing: border-box;
-            text-align: center;
+           
         }
         
         .director-role {
@@ -197,6 +205,8 @@
             height: 507px;
             margin: auto;
         }
+
+     
         
         @media (max-width: 991px) {
             .director-container:nth-child(odd) {
@@ -219,17 +229,24 @@
             }
         }
         
-        .visually-hidden {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
+        @media (min-width:1600px) {
+            .board-header{
+                max-width: 55vw;
+            }
+            .board-description{
+                font-size: 1.5vw;
+            }
+            .director-info{
+                max-width: 50%;
+            }
+            .board-title{
+                font-size: 3vw;
+            }
+            .board-content {
+            max-width: 70vw;
+            }
         }
+  
     </style>
     <title>Document</title>
 </head>

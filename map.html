@@ -1,0 +1,74 @@
+<style>
+    .news-events-map {
+      display: block;
+      flex-direction: column;
+      color: #000;
+      font: 600 45px/1 Outfit, sans-serif;
+    }
+    
+    .locations-container {
+      background-color: #f0f0f0;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      padding: 54px 80px 159px;
+    }
+    
+    .content-wrapper-map {
+      display: flex;
+      margin-bottom: -32px;
+      
+      max-width: 90%;
+      flex-direction: column;
+    }
+    
+    .locations-title {
+      margin: 0;
+    }
+    
+    .locations-image {
+      aspect-ratio: 2.73;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+      margin-top: 42px;
+    }
+    
+    @media (max-width: 991px) {
+      .news-events-map {
+        font-size: 40px;
+      }
+    
+      .locations-container {
+        max-width: 100%;
+        font-size: 40px;
+        padding: 0 20px 100px;
+      }
+    
+      .content-wrapper-map {
+        max-width: 100%;
+        margin-bottom: 10px;
+        font-size: 40px;
+      }
+    
+      .locations-title {
+        max-width: 100%;
+        font-size: 40px;
+      }
+    
+      .locations-image {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+    </style>
+    
+    <section class="news-events-map">
+      <div class="locations-container">
+        <div class="content-wrapper-map">
+          <h2 class="locations-title">Our Locations</h2>
+          <img class="locations-image" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/29e0451299af50bff35a7a609a6e3363e4d0bb9194337e36e4595ffd58f4656a?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Map showing our locations" loading="lazy">
+        </div>
+      </div>
+    </section>

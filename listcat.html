@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<head>
+<style>
+
+body {
+  margin: 0; /* Ensure the body has no margin */
+  padding: 0;
+  
+ 
+}
+
+    .product-categories {
+      display: flex;
+      flex-direction: column;
+      font-family: Outfit, sans-serif;
+    }
+    
+    .product-categories-container {
+      background-color: #fff;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      padding: 58px 80px 199px;
+    }
+    
+    @media (max-width: 991px) {
+      .product-categories-container {
+        max-width: 100%;
+        padding: 0 20px 100px;
+      }
+    }
+    
+    .search-container {
+      display: flex;
+      margin-bottom: -40px;
+      width: 100%;
+      max-width: 90%;
+      flex-direction: column;
+      justify-content: start;
+    }
+    
+    @media (max-width: 991px) {
+      .search-container {
+        max-width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+    
+    .search-bar {
+      align-self: start;
+      display: flex;
+      align-items: center;
+      gap: 40px 53px;
+      font-size: 40px;
+      color: #000;
+      font-weight: 400;
+      justify-content: start;
+    }
+    
+    .search-label {
+      align-self: stretch;
+      margin: auto 0;
+    }
+    
+    .search-option {
+      align-self: stretch;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      white-space: nowrap;
+      justify-content: start;
+      margin: auto 0;
+    }
+    
+    @media (max-width: 991px) {
+      .search-option {
+        white-space: initial;
+      }
+    }
+    
+    .radio-button {
+      border-radius: 50%;
+      align-self: stretch;
+      display: flex;
+      width: 30px;
+      height: 30px;
+      margin: auto 0;
+    }
+    
+
+      
+    .product-grid, .brand-grid {
+            display: none; /* Hide both grids initially */
+           
+        }
+
+
+    .search-option-label {
+      align-self: stretch;
+      margin: auto 0;
+    }
+   
+    
+    .product-grid {
+      display: flex;
+      margin-top: 50px;
+      width: 100%;
+      max-width: 100%;
+      align-items: start;
+      gap: 20px 20px;
+      font-size: 32px;
+      color: #fff;
+      font-weight: 600;
+      text-align: center;
+
+      justify-content: start;
+      flex-wrap: wrap;
+    }
+    
+  
+ 
+    
+    .product-image-wrapper {
+      display: flex;
+      flex-direction: column;
+      text-shadow: 0 4px 7px rgba(0, 0, 0, 0.25);
+      position: relative;
+      border-radius: 20px;
+      margin: 10px 10px;
+      padding: 10px 10px;
+      height: 9.7vw;
+      width: 13.7vw;
+    }
+
+    
+    .product-image {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      width:  100%;
+      
+      object-position: center;
+    }
+    
+    .product-title {
+      position: relative;
+      align-self: center;
+     font-size: 1.9vw;
+    }
+
+
+        
+    @media (max-width: 995px) {
+      .product-title{
+        font-size: 50px;
+      }
+      .product-grid {
+        justify-content: center;
+      }
+
+      .product-image-wrapper {
+        height: 228px;
+        width: 310px;
+      }
+
+      
+    }
+
+
+    .brand-grid {
+            display:grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+          
+            max-width: 100%;
+            margin-top: 80px;
+        }
+
+        .brand-item {
+            border: 1px solid #E1E1E1;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 120px;
+        }
+
+        .brand-item img {
+            max-height: 80px;
+            max-width: 100%;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+            .brand-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .brand-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .brand-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 400px) {
+            .brand-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+  
+
+    </style>
+    </head>
+    <body>
+      <section class="product-categories">
+        <div class="product-categories-container">
+            <div class="search-container">
+                <form class="search-bar" role="search">
+                    <label for="search-options" class="search-label">Search by:</label>
+                    <div class="search-option">
+                        <input type="radio" id="category" name="search-option" class="radio-button" checked onclick="toggleDisplay()">
+                        <label for="category" class="search-option-label">Category</label>
+                    </div>
+                    <div class="search-option">
+                        <input type="radio" id="brand" name="search-option" class="radio-button" onclick="toggleDisplay()">
+                        <label for="brand" class="search-option-label">Brand</label>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="product-grid" id="productGrid">
+             
+                    <div class="product-image-wrapper">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/3c672e9e146bd9faf3f7bdaf54cd660ecc74249d9129d6925e81d1fe65a34f28?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="product-image" alt="Critical Care equipment" />
+                        <h2 class="product-title">Critical Care</h2>
+                    </div>
+     
+                
+                    <div class="product-image-wrapper">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/c2b63ac02491d8fe9d0b84ae834d762b3015dfb33c86e3a146fa7080efbd4cde?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="product-image" alt="Operating Rooms equipment" />
+                        <h2 class="product-title">Operating <br /> Rooms</h2>
+                    </div>
+                
+                
+                    <div class="product-image-wrapper">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/2742730e9228013ff8ef38f0cd5ed9468ed732982fc029c804cfad8c946e536d?apiKey=ca9bec4f0fc246bb96d95b6&" class="product-image" alt="Surgery equipment" />
+                        <h2 class="product-title">Surgery</h2>
+                    </div>
+                
+                
+                    <div class="product-image-wrapper">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/d6d591fe96d222769dd066032098bb80a941dec229790259b36b063c55c7814a?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="product-image" alt="Cardiology equipment" />
+                        <h2 class="product-title">Cardiology</h2>
+                    </div>
+                
+                
+                    <div class="product-image-wrapper">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/f1dd4223942a9dacac35ecdce1a9c5d1893d4fb9b8aad9b77b8c285900fb25b2?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="product-image" alt="Radiation Oncology equipment" />
+                        <h2 class="product-title">Radiation <br /> Oncology</h2>
+                    </div>
+                
+                
+                    <div class="product-image-wrapper">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/cdd3f4e95be81180a8c6cf37df9802201f90b88b320bdf1f5b247398c861d6cb?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="product-image" alt="Urology equipment" />
+                        <h2 class="product-title">Urology</h2>
+                    </div>
+                
+                
+                    <div class="product-image-wrapper">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/9e943822a833902ba2f2bacae16470547b1577354298a7acdbfddf978acec474?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="product-image" alt="Anaesthesia equipment" />
+                        <h2 class="product-title">Anaesthesia</h2>
+                    </div>
+                
+            </div>
+    
+            <div class="brand-grid" id="brandGrid">
+                <div class="brand-item"><img src="assets/getinge.png" alt="Getinge"></div>
+                <div class="brand-item"><img src="assets/Delacroix.png" alt="Delacroix Chevalier"></div>
+                <div class="brand-item"><img src="assets/arcomed.png" alt="Arcomed"></div>
+                <div class="brand-item"><img src="assets/Lamidey.png" alt="Lamidey Noury"></div>
+                <div class="brand-item"><img src="assets/dexsurgical.png" alt="Dex Surgical"></div>
+                <div class="brand-item"><img src="assets/thermasolutions.png" alt="Therma Solutions"></div>
+                <div class="brand-item"><img src="assets/lap.png" alt="LAP"></div>
+                <div class="brand-item"><img src="assets/RaySearch.png" alt="RaySearch Laboratories"></div>
+                <div class="brand-item"><img src="assets/arplay.png" alt="Arplay Medical"></div>
+                <div class="brand-item"><img src="assets/orfit.png" alt="Orfit"></div>
+                <div class="brand-item"><img src="assets/edaptms.png" alt="Edap TMS"></div>
+                <div class="brand-item"><img src="assets/geHC.png" alt="GE Healthcare"></div>
+                <div class="brand-item"><img src="assets/medap-logo.png" alt="Medap"></div>
+                <div class="brand-item"><img src="assets/landanger.png" alt="Landanger"></div>
+                <div class="brand-item"><img src="assets/Farimont.png" alt="Fairmont Medical"></div>
+                <div class="brand-item"><img src="assets/SurgiMed.png" alt="SurgMedia"></div>
+                <div class="brand-item"><img src="assets/LSB.png" alt="LSB"></div>
+                <div class="brand-item"><img src="assets/a2i.png" alt="A2i"></div>
+                <div class="brand-item"><img src="assets/mils.png" alt="Mits"></div>
+            </div>
+        </div>
+    </section>
+<script>
+    function toggleDisplay() {
+        var categoryChecked = document.getElementById("category").checked;
+        var productGrid = document.querySelector(".product-grid");
+        var brandGrid = document.querySelector(".brand-grid");
+
+        if (categoryChecked) {
+            productGrid.style.display = "flex"; // Show product grid
+            brandGrid.style.display = "none"; // Hide brand grid
+        } else {
+            productGrid.style.display = "none"; // Hide product grid
+            brandGrid.style.display = "grid"; // Show brand grid
+        }
+    }
+
+    // Initialize display based on the default checked radio button
+    window.onload = function() {
+        toggleDisplay();
+    }
+
+</script>
+</body>

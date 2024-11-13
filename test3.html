@@ -4,60 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .product-section { display: flex; flex-direction: column; font-family: Outfit, sans-serif; background-color: #fff; padding: 57px 20px; align-items: center; }
-        .content-wrapper { display: flex; gap: 30px; align-items: flex-start; max-width: 1200px; flex-wrap: wrap; justify-content: center; }
-        .text-content { display: flex; flex-direction: column; max-width: 526px; }
-        .breadcrumb { font-size: 20px; color: #d6d4d4; font-weight: 400; margin-bottom: 20px; }
-        .breadcrumb-item { color: #d6d4d4; }
-        .breadcrumb-current { color: #989da2; }
-        .product-title { font-size: 45px; font-weight: 600; line-height: 1; margin-bottom: 25px; }
-        .product-description { font-size: 22px; line-height: 1.5; margin-bottom: 25px; color: #000; }
-        .product-meta { font-size: 20px; margin-top: 25px; }
-        .download-links { margin-top: 10px; }
-        .download-link { color: #007bff; text-decoration: none; display: block; margin-top: 5px; padding-left: 10px; }
-        .contact-button-wrapper { margin-top: 40px; }
-        .contact-button { border-radius: 40px; padding: 11px 16px; border: 2px solid #81b3e2; background-color: transparent; color: #007bff; font-size: 20px; cursor: pointer; }
-        .product-image { aspect-ratio: 1; object-fit: contain; object-position: center; width: 524px; align-self: stretch; min-width: 240px; margin: auto 0; }
+        .showcase-product-section { display: flex; flex-direction: column; font-family: Outfit, sans-serif; background-color: #fff; padding: 57px 20px; align-items: center; }
+        .showcase-content-wrapper { display: flex; gap: 30px; align-items: flex-start; max-width: 100%;width: 83.3vw; flex-wrap: wrap; justify-content: center; }
+        .showcase-text-content { display: flex; flex-direction: column; width:30%; max-width: 70%;}
+        .showcase-breadcrumb { font-size: 1.4vw; color: #d6d4d4; font-weight: 400; margin-bottom: 20px; }
+        .showcase-breadcrumb-item { color: #d6d4d4; }
+        .showcase-breadcrumb-current { color: #989da2; }
+        .showcase-product-title { font-size: 3.125vw; font-weight: 600; line-height:1; margin-bottom: 25px; }
+        .showcase-product-description { font-size: 1.5vw; line-height:1.5; margin-bottom: 25px; color: #000; }
+        .showcase-product-meta { font-size: 1.4vw; margin-top: 25px; }
+
+
+
+        .showcase-download-links { margin-top: 10px; }
+        .showcase-download-link { color: #007bff; text-decoration: none; display: block; margin-top: 5px; padding-left: 10px; }
+        .showcase-showcase-contact-button-wrapper { margin-top: 40px; }
+        .showcase-contact-button { border-radius: 40px; padding: 11px 16px; border: 2px solid #81b3e2; background-color: transparent; color:inherit; font-size: 20px; cursor: pointer; }
+        .showcase-product-image { aspect-ratio: 1; object-fit: contain; object-position: center; width:40%;max-width: 70%;; align-self: stretch; min-width: 240px; margin: auto 0; }
     
-        @media (max-width: 991px) {
-            .product-section { padding: 20px; }
-            .content-wrapper { flex-direction: column; align-items: center; }
-            .product-title { font-size: 40px; }
-            .product-description { font-size: 20px; }
-            .contact-button-wrapper { margin-top: 20px; }
-            .product-image { width: 100%; }
+        @media (max-width: 1000px) {
+            .showcase-text-content {width: 60%;}
+            .showcase-breadcrumb {font-size: 15px;}
+            .showcase-product-section { padding: 20px; }
+            .showcase-content-wrapper { flex-direction: column; align-items: center; }
+            .showcase-product-title { line-height: 1;font-size: 26px; }
+            .showcase-product-description { line-height: 1.5; font-size: 15px;}
+            .showcase-showcase-contact-button-wrapper { margin-top: 20px; }
+            .showcase-product-meta {font-size:14.5px ;} 
+            .showcase-product-image { width: 70%; align-self: center; } 
         }
     </style>
     <title>Document</title>
 </head>
 <body>
-    <section class="product-section">
-        <div class="content-wrapper">
-            <div class="text-content">
-                <nav class="breadcrumb" aria-label="Breadcrumb">
-                    <span class="breadcrumb-item">Products & Solutions /</span>
-                    <span class="breadcrumb-item">Critical Care /</span>
-                    <span class="breadcrumb-current">Servo Air</span>
+    <section class="showcase-product-section">
+        <div class="showcase-content-wrapper">
+            <div class="showcase-text-content">
+                <nav class="showcase-breadcrumb" aria-label="showcase-breadcrumb">
+                    <span class="showcase-breadcrumb-item">Products & Solutions /</span>
+                    <span class="showcase-breadcrumb-item">Critical Care /</span>
+                    <span class="showcase-breadcrumb-current">Servo Air</span>
                 </nav>
-                <h1 class="product-title">Servo Air</h1>
-                <div class="product-description">
+                <h1 class="showcase-product-title">Servo Air</h1>
+                <div class="showcase-product-description">
                     <p>
                         The Servo Air Ventilator provides clinically accurate ventilation with user-friendly controls and advanced lung protection. Its turbine-driven system allows autonomy from a central gas supply, while its 120-minute battery life supports intra-hospital transport. Cost-effective and low-maintenance, it ensures precise care with minimal operational costs in any clinical setting.
                     </p>
                 </div>
-                <div class="product-meta">
+                <div class="showcase-product-meta">
                     <strong>Brand:</strong> GETINGE <br />
                     
-                    <div class="download-links">
-                        <a href="#" class="download-link">Download e-catalog</a>
-                        <a href="#" class="download-link">Download configs</a>
+                    <div class="showcase-download-links">
+                        <a href="#" class="showcase-download-link">Download e-catalog</a>
+                        <a href="#" class="showcase-download-link">Download configs</a>
                     </div>
                 </div>
-                <div class="contact-button-wrapper">
-                    <button class="contact-button">Contact Us</button>
+                <div class="showcase-showcase-contact-button-wrapper">
+                    <button class="showcase-contact-button">Contact Us</button>
                 </div>
             </div>
-            <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/055beb948c07f879376cae155ccdbfcc9346658d7ec40d3743b1c686e685f8ea?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Servo Air Ventilator" class="product-image" />
+            <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/055beb948c07f879376cae155ccdbfcc9346658d7ec40d3743b1c686e685f8ea?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" alt="Servo Air Ventilator" class="showcase-product-image" />
         </div>
     </section>
 </body>

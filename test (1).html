@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Ventilators</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .detail-prod-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content-wrapper-detail-prod {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 6.66vw 10vw;
+            max-width: 100%;
+        }
+
+        .left-aligned-container {
+            max-width: 100%;
+            align-self: center;
+        }
+
+        .breadcrumb {
+            font-size: 1.5vw;
+            font-family: Outfit, sans-serif;
+            color: #989da2;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .detail-category-list {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .detail-category-button {
+            font-family: Outfit, sans-serif;
+            font-size: 1.33vw;
+            padding: 10px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            background-color: #d6d4d4;
+            color: #000;
+            transition: background-color 0.3s ease;
+        }
+
+        .detail-category-button.active {
+            background-color: #3e8cd6;
+            color: #fff;
+        }
+
+        .detail-product-section {
+            margin-top: 40px;
+            width: 100%;
+            display: none; /* Hide all sections by default */
+        }
+
+        .detail-product-title {
+            font-size: 2.5vw;
+            font-family: Outfit, sans-serif;
+            font-weight: 600;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        .detail-product-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+
+        .detail-product-card {
+            text-align: center;
+            width: 20vw;
+        }
+
+        .detail-product-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .detail-product-name {
+            font-size: 1.5;
+            font-family: Outfit, sans-serif;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .content-wrapper-detail-prod {
+                padding: 10px 20px;
+            }
+
+            .detail-product-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+<section class="detail-prod-section">
+    <div class="content-wrapper-detail-prod">
+        <div class="left-aligned-container">
+            <nav class="breadcrumb">Products & Solutions / Critical Care</nav>
+            
+            <div class="detail-category-list">
+                <div class="detail-category-button active" onclick="changeTab(event, 'icu')">ICU Ventilators</div>
+                <div class="detail-category-button" onclick="changeTab(event, 'nicu')">NICU Ventilators</div>
+                <div class="detail-category-button" onclick="changeTab(event, 'syringe')">Syringe Pumps</div>
+                <div class="detail-category-button" onclick="changeTab(event, 'pendants')">ICU Pendants</div>
+                <div class="detail-category-button" onclick="changeTab(event, 'suction')">Suctions</div>
+            </div>
+            
+            <section class="detail-product-section" id="icu">
+                <h2 class="detail-product-title">ICU Ventilators</h2>
+                <div class="detail-product-grid">
+                    <div class="detail-product-card">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/2eba427e6eb3f2b52331a47b53aa733c65739c9ed000a1e59772e66c0e4fed44?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="detail-product-image" alt="Servo Air ICU Ventilator">
+                        <div class="detail-product-name">Servo Air</div>
+                    </div>
+                    <div class="detail-product-card">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/db211dbf50c62f0b6c99f11653b8d2b3cf7d1817071c07461411639430104ebb?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="detail-product-image" alt="Servo C ICU Ventilator">
+                        <div class="detail-product-name">Servo C</div>
+                    </div>
+                    <div class="detail-product-card">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/7f6fa18352cf7562d59d4696af737ff6e6f5eb04aa3cf7d99e74a088cbe2b072?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="detail-product-image" alt="Servo U ICU Ventilator">
+                        <div class="detail-product-name">Servo U</div>
+                    </div>
+                </div>
+            </section>
+            <section class="detail-product-section" id="nicu">
+                <h2 class="detail-product-title">NICU Ventilators</h2>
+                <div class="detail-product-grid">
+                    <div class="detail-product-card">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/2eba427e6eb3f2b52331a47b53aa733c65739c9ed000a1e59772e66c0e4fed44?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="detail-product-image" alt="Servo Air ICU Ventilator">
+                        <div class="detail-product-name">Servo Air</div>
+                    </div>
+                    <div class="detail-product-card">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/db211dbf50c62f0b6c99f11653b8d2b3cf7d1817071c07461411639430104ebb?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="detail-product-image" alt="Servo C ICU Ventilator">
+                        <div class="detail-product-name">Servo C</div>
+                    </div>
+                    <div class="detail-product-card">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/7f6fa18352cf7562d59d4696af737ff6e6f5eb04aa3cf7d99e74a088cbe2b072?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="detail-product-image" alt="Servo U ICU Ventilator">
+                        <div class="detail-product-name">Servo U</div>
+                    </div>
+                </div>
+            </section>
+            <section class="detail-product-section" id="syringe">
+                <h2 class="detail-product-title">Syringe Pumps</h2>
+                <div class="detail-product-grid">
+                    <div class="detail-product-card">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/2eba427e6eb3f2b52331a47b53aa733c65739c9ed000a1e59772e66c0e4fed44?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="detail-product-image" alt="Servo Air ICU Ventilator">
+                        <div class="detail-product-name">Servo Air</div>
+                    </div>
+                    <div class="detail-product-card">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/db211dbf50c62f0b6c99f11653b8d2b3cf7d1817071c07461411639430104ebb?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="detail-product-image" alt="Servo C ICU Ventilator">
+                        <div class="detail-product-name">Servo C</div>
+                    </div>
+                    <div class="detail-product-card">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/ca9bec4f0fc246bb96cb1a12772d95b6/7f6fa18352cf7562d59d4696af737ff6e6f5eb04aa3cf7d99e74a088cbe2b072?apiKey=ca9bec4f0fc246bb96cb1a12772d95b6&" class="detail-product-image" alt="Servo U ICU Ventilator">
+                        <div class="detail-product-name">Servo U</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+<script>
+    function changeTab(event, sectionId) {
+        // Remove 'active' class from all buttons
+        document.querySelectorAll('.detail-category-button').forEach(button => button.classList.remove('active'));
+        
+        // Add 'active' class to the clicked button
+        event.currentTarget.classList.add('active');
+
+        // Hide all detail-product sections
+        document.querySelectorAll('.detail-product-section').forEach(section => section.style.display = 'none');
+        
+        // Show the selected detail-product section
+        document.getElementById(sectionId).style.display = 'block';
+    }
+
+    // Initialize with the first section displayed (ICU Ventilators by default)
+    window.onload = function() {
+        document.getElementById('icu').style.display = 'block';
+    }
+</script>
+</body>
+</html>
